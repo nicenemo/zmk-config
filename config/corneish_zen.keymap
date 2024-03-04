@@ -42,7 +42,7 @@
 #define CONFIG         17
 #define POWER          18
 #define INPUT_ASSIST   19
-#define APPLICATIONS   20
+#define APPLICATION    20
 #define CONSUMER       21
 #define DISPLAY        22
 #define MEDIA          23
@@ -304,15 +304,15 @@
                 misc_layer {
                         label = "MISC";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// | TILDE2        |      |         |          |             | to NUMPAD   |                              | to QWERTY     | to CMMDH    | CLEAR       | CLEAR_AGAIN      | NUMLOCK    | NUBS    |
-// | mt HYP NUHS   |      |   LCTRL |     LALT |   LGUI      | LSHFT       |                              | CAPS WORD     | OUT         | OPER        | EXSEL            | CAPSLOCK   | PIPE2   |
-// | MEH           |      |   RCTRL |     RALT |   RGUI      | RSHFT       |                              | PAUSE_BREAK   | CRSEL       | PRIOR       | SEPARATOR        | SCROLLLOCK |         |
-//                                  |    SYSREQ|             | PRINTSCREEN |                              |               | K_CANCEL    | ALT_ERASE   |
+// | TILDE2        |      |         | to CONSUMER | to APPLICATION | to NUMPAD   |                              | to QWERTY     | to CMMDH    | CLEAR       | CLEAR_AGAIN      | NUMLOCK    | NUBS    |
+// | mt HYP NUHS   |      |   LCTRL |     LALT    |   LGUI         | LSHFT       |                              | CAPS WORD     | OUT         | OPER        | EXSEL            | CAPSLOCK   | PIPE2   |
+// | MEH           |      |   RCTRL |     RALT    |   RGUI         | RSHFT       |                              | PAUSE_BREAK   | CRSEL       | PRIOR       | SEPARATOR        | SCROLLLOCK |         |
+//                                  |    SYSREQ   |                | PRINTSCREEN |                              |               | K_CANCEL    | ALT_ERASE   |
                          bindings = <
-   &kp TILDE2     &none     &none     &none      &none          &to NUMPAD                                   &to QWERTY      &to CMMDH     &kp CLEAR      &kp CLEAR_AGAIN &kp LNLCK      &kp NUBS
-   &mt HYP NUHS   &none     &kp LCTRL &kp LALT   &kp LGUI       &kp LSHFT                                    &caps_word      &kp OUT       &kp OPER       &kp EXSEL       &kp CAPSLOCK   &kp PIPE2
-   &kp MEH        &none     &kp RCTRL &kp RALT   &kp RGUI       &kp RSHFT                                    &kp PAUSE_BREAK &kp CRSEL     &kp PRIOR      &kp SEPARATOR   &kp SCROLLLOCK &none
-                                      &kp SYSREQ &kp K_EDIT     &kp PRINTSCREEN                              &kp RET2        &kp K_CANCEL  &kp ALT_ERASE 
+   &kp TILDE2     &none     &none     &to CONSUMER  &to APPLICATION   &to NUMPAD                                   &to QWERTY      &to CMMDH     &kp CLEAR      &kp CLEAR_AGAIN &kp LNLCK      &kp NUBS
+   &mt HYP NUHS   &none     &kp LCTRL &kp LALT      &kp LGUI          &kp LSHFT                                    &caps_word      &kp OUT       &kp OPER       &kp EXSEL       &kp CAPSLOCK   &kp PIPE2
+   &kp MEH        &none     &kp RCTRL &kp RALT      &kp RGUI          &kp RSHFT                                    &kp PAUSE_BREAK &kp CRSEL     &kp PRIOR      &kp SEPARATOR   &kp SCROLLLOCK &none
+                                      &kp SYSREQ    &kp K_EDIT        &kp PRINTSCREEN                              &kp RET2        &kp K_CANCEL  &kp ALT_ERASE 
                         >;
                 };
                 config_layer {
@@ -360,33 +360,33 @@
                         >;
                 };
 
-                applications_layer {
-                        label = "APPLICATIONS";
-// -----------------------------------------------------------------------------------------------------------------------------
-// |     |      |      |     |      |         |                                     |      |      |      |      |      |       |
-// |     |      |      |     |      |         |                                     |      |      |      |      |      |       | 
-// |     |      |      |     |      |         |                                     |      |      |      |      |      |       |
-//                     |     |      |         |                                     |      |      |      |
+                application_layer {
+                        label = "APPLICATION";
+// ----------------------------------------------------------------------------------------------------------------------------------
+// |     |      |      |     |      |         |                                          |      |      |      |      |      |       |
+// |     |      |      |     |      |         |                                          |      |      |      |      |      |       | 
+// |     |      |      |     |      |         |                                          |      |      |      |      |      |       |
+//                     |     |      |         |                                          |      |      |      |
                          bindings = <
-   &none  &none  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none 
-   &none  &none  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
-   &none  &none  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
-                        &none  &none  &none                                           &none  &none  &none 
+   &none  &lt MISC A  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none 
+   &none  &none       &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
+   &none  &none       &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
+                             &none  &none  &none                                           &none  &none  &none 
                         >;
                 };
 
                 consumer_layer {
                         label = "CONSUMER";
-// -----------------------------------------------------------------------------------------------------------------------------
-// |     |      |      |     |      |         |                                     |      |      |      |      |      |       |
-// |     |      |      |     |      |         |                                     |      |      |      |      |      |       | 
-// |     |      |      |     |      |         |                                     |      |      |      |      |      |       |
-//                     |     |      |         |                                     |      |      |      |
+// ----------------------------------------------------------------------------------------------------------------------------------
+// |     |      |      |     |      |         |                                          |      |      |      |      |      |       |
+// |     |      |      |     |      |         |                                          |      |      |      |      |      |       | 
+// |     |      |      |     |      |         |                                          |      |      |      |      |      |       |
+//                     |     |      |         |                                          |      |      |      |
                          bindings = <
-   &none  &none  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none 
-   &none  &none  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
-   &none  &none  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
-                        &none  &none  &none                                           &none  &none  &none 
+   &none  &lt MISC A  &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none 
+   &none  &none       &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
+   &none  &none       &none  &none  &none  &none                                           &none  &none  &none  &none  &none  &none
+                             &none  &none  &none                                           &none  &none  &none 
                         >;
                 };
 
