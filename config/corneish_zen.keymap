@@ -42,7 +42,7 @@
 #define CONFIG         17
 #define POWER          18
 #define INPUT_ASSIST   19
-#define APPLICATION    20
+#define APPLAUNCH      20
 #define CONSUMER       21
 #define DISPLAY        22
 #define MEDIA          23
@@ -68,10 +68,10 @@
 // | GRAVE |  Z  |  X  |  C  |  V  |  B  |                                                            |  N  |  M   |  ,   |  .  |  /  |  ' |
 //                     | ESC | SPC | TAB |                                                            | RET |  DEL | BSPC |
                         bindings = <
-   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &kp        T              &kp          Y   &lt MEHHFUN       U     &lt MEHFUN   I      &lt HYPHFUN O   &lt HYPFUN         P    &lt HFUN  BACKSLASH
-   &mt HYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT  G              &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &lt INTERNATIONAL  SEMI &mt HYP   DQT
-   &mt MEH    GRAVE &kp      Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT  B              &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL   DOT &lt LANGUAGE       FSLH &mt MEH   SQT 
-                                        &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE  SPACE              &lt SYM      RET &lt NUM           DEL   &lt FUN BSPC 
+   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &kp        T              &lt MEHFUN   Y   &lt MEHFUN        U     &lt HYPHFUN   I     &lt HYPFUN  O   &lt HFUN           P    &lt FUN  BACKSLASH
+   &mt HYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT  G              &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &lt INTERNATIONAL  SEMI &mt HYP  DQT
+   &mt MEH    GRAVE &kp      Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT  B              &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL   DOT &lt LANGUAGE       FSLH &mt MEH  SQT 
+                                        &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE  SPACE              &lt SYM      RET &lt NUM           DEL   &lt APPLAUNCH BSPC 
                         >;
                 };
 
@@ -304,12 +304,12 @@
                 misc_layer {
                         label = "MISC";
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// | TILDE2        |      |         | to CONSUMER | to APPLICATION | to NUMPAD   |                              | to QWERTY     | to CMMDH    | CLEAR       | CLEAR_AGAIN      | NUMLOCK    | NUBS    |
+// | TILDE2        |      |         |             |                | to NUMPAD   |                              | to QWERTY     | to CMMDH    | CLEAR       | CLEAR_AGAIN      | NUMLOCK    | NUBS    |
 // | mt HYP NUHS   |      |   LCTRL |     LALT    |   LGUI         | LSHFT       |                              | CAPS WORD     | OUT         | OPER        | EXSEL            | CAPSLOCK   | PIPE2   |
 // | MEH           |      |   RCTRL |     RALT    |   RGUI         | RSHFT       |                              | PAUSE_BREAK   | CRSEL       | PRIOR       | SEPARATOR        | SCROLLLOCK |         |
 //                                  |    SYSREQ   |                | PRINTSCREEN |                              |               | K_CANCEL    | ALT_ERASE   |
                          bindings = <
-   &kp TILDE2     &none     &none     &to CONSUMER  &to APPLICATION   &to NUMPAD                                   &to QWERTY      &to CMMDH     &kp CLEAR      &kp CLEAR_AGAIN &kp LNLCK      &kp NUBS
+   &kp TILDE2     &none     &none     &none         &none             &to NUMPAD                                   &to QWERTY      &to CMMDH     &kp CLEAR      &kp CLEAR_AGAIN &kp LNLCK      &kp NUBS
    &mt HYP NUHS   &none     &kp LCTRL &kp LALT      &kp LGUI          &kp LSHFT                                    &caps_word      &kp OUT       &kp OPER       &kp EXSEL       &kp CAPSLOCK   &kp PIPE2
    &kp MEH        &none     &kp RCTRL &kp RALT      &kp RGUI          &kp RSHFT                                    &kp PAUSE_BREAK &kp CRSEL     &kp PRIOR      &kp SEPARATOR   &kp SCROLLLOCK &none
                                       &kp SYSREQ    &kp K_EDIT        &kp PRINTSCREEN                              &kp RET2        &kp K_CANCEL  &kp ALT_ERASE 
@@ -361,17 +361,17 @@
                 };
 
                 application_layer {
-                        label = "APPLICATION";
-// -----------------------------------------------------------------------------------------------------------------------------------------------------
-// |     | A         |        C_AL_CALCULATOR |     |      |         |                                      |      |      |      |      |      |       |
-// |     |           |                        |     |      |         |                                      |      |      |      |      |      |       | 
-// |     |           |                        |     |      |         |                                      |      |      |      |      |      |       |
-//                                            |     |      |         |                                      |      |      |      |
+                        label = "APPL";
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   C_AL_MY_COMPUTER |     C_AL_DOCUMENTS   |     C_AL_FILE_BROWSER |     C_AL_WWW                |      K_WWW             |      C_AL_CALCULATOR      |                        |              |            |            |            |      |            |
+// |   C_AL_EMAIL       |     C_AL_CALENDAR    |     C_AL_CONTACTS     |     C_AL_INSTANT_MESSAGING  |      C_AL_NETWORK_CHAT |      C_AL_TEXT_EDITOR     |                        |       RSHIFT |       RGUI |       RALT |      RCTRL |      |       HYP  |
+// |   C_AL_WORD        |     C_AL_SPREADSHEET |     C_AL_PRESENTATION |     C_AL_DATABASE           |      C_AL_JOURNAL      |      C_AL_GRAPHICS_EDITOR |                        |       LSHFT  |       LGUI |       LALT |      LCTRL |      |       MEH  |
+//                                             |     C_AL_PRESENTATION |     C_AL_PREV_TASK          |      C_AL_NEXT_TASK    |      C_AL_SELECT_TASK     |                        |              |            |            |
                          bindings = <
-   &none  &lt MISC A  &kp     C_AL_CALCULATOR   &none  &none  &none                                           &none  &none  &none  &none  &none  &none 
-   &none  &none       &none                     &none  &none  &none                                           &none  &none  &none  &none  &none  &none
-   &none  &none       &none                     &none  &none  &none                                           &none  &none  &none  &none  &none  &none
-                                                &none  &none  &none                                           &none  &none  &none 
+   &kp C_AL_MY_COMPUTER   &kp C_AL_DOCUMENTS     &kp C_AL_FILE_BROWSER   &kp C_AL_WWW                   &kp K_WWW               &kp  C_AL_CALCULATOR                                 &none         &none         &none       &none         &none  &none
+   &kp C_AL_EMAIL         &kp C_AL_CALENDAR      &kp C_AL_CONTACTS       &kp C_AL_INSTANT_MESSAGING     &kp C_AL_NETWORK_CHAT   &kp  C_AL_TEXT_EDITOR                                &kp   RSHFT   &kp    RGUI   &kp   RALT  &kp   RCTRL   &none  &kp   HYP
+   &kp C_AL_WORD          &kp C_AL_SPREADSHEET   &kp C_AL_PRESENTATION   &kp C_AL_DATABASE              &kp C_AL_JOURNAL        &kp  C_AL_GRAPHICS_EDITOR                            &kp   LSHFT   &kp    LGUI   &kp   LALT  &kp   LCTRL   &none  &kp   MEH
+                                                                         &kp C_AL_PREV_TASK             &kp C_AL_NEXT_TASK      &kp  C_AL_SELECT_TASK                                &none         &none         &none 
                         >;
                 };
 
