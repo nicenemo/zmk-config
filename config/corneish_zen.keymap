@@ -69,8 +69,8 @@
 // | GRAVE |  Z  |  X  |  C  |  V  |  B  |                                                            |  N  |  M   |  ,   |  .  |  /  |  ' |
 //                     | ESC | SPC | TAB |                                                            | RET |  DEL | BSPC |
                         bindings = <
-   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &kp        T              &lt MEHFUN   Y   &lt MEHFUN        U     &lt HYPHFUN   I     &lt HYPFUN  O   &lt HFUN           P    &lt FUN  BACKSLASH
-   &mt HYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT  G              &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &lt INTERNATIONAL  SEMI &mt HYP  DQT
+   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &kp        T              &kp          Y   &kp               U     &kp          I      &lt MEHFUN  O   &lt HYPFUN         P    &lt FUN  BACKSLASH
+   &mt HYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT  G              &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &kp                SEMI &mt HYP  DQT
    &mt MEH    GRAVE &kp      Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT  B              &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL   DOT &lt LANGUAGE       FSLH &mt MEH  SQT 
                                         &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE  SPACE              &lt SYM      RET &lt NUM           DEL   &lt APPLAUNCH BSPC 
                         >;
@@ -153,15 +153,15 @@
 
                 fun_layer {
                         label = "FUN";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------
-// |       |   F7 |   F8 |     F9 |           |       |                                             |           |        |        |         |     |      |
-// |       |   F4 |   F5 |     F6 |           |       |                                             | RSHFT     | RGUI   | RALT   | RCTRL   |     | HYP  |
-// |       |   F1 |   F2 |     F3 |           |       |                                             | LSHFT     | LGUI   | LALT   | LCTRL   |     | MEH  |
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |   F7 |   F8 |     F9 |           |       |                                             |           |        |        |         |       HFUN |          |
+// |       |   F4 |   F5 |     F6 |           |       |                                             | RSHFT     | RGUI   | RALT   | RCTRL   |            |     HYP  |
+// |       |   F1 |   F2 |     F3 |           |       |                                             | LSHFT     | LGUI   | LALT   | LCTRL   |            |     MEH  |
 //                       |    F10 |           |       |                                             |           |        |        |
                          bindings = <
-   &none     &kp F7 &kp F8 &kp   F9  &none     &none                                                  &none       &none    &none    &none     &none &none
-   &none     &kp F4 &kp F5 &kp   F6  &none     &none                                                  &kp RSHFT   &kp RGUI &kp RALT &kp RCTRL &none &kp HYP
-   &none     &kp F1 &kp F2 &kp   F3  &none     &none                                                  &kp LSHFT   &kp LGUI &kp LALT &kp LCTRL &none &kp MEH
+   &none     &kp F7 &kp F8 &kp   F9  &none     &none                                                  &none       &none    &none    &none     &mo   HFUN   &none
+   &none     &kp F4 &kp F5 &kp   F6  &none     &none                                                  &kp RSHFT   &kp RGUI &kp RALT &kp RCTRL &none        &kp HYP
+   &none     &kp F1 &kp F2 &kp   F3  &none     &none                                                  &kp LSHFT   &kp LGUI &kp LALT &kp LCTRL &none        &kp MEH
                            &kp   F10 &kp DEL   &kp   BSPC                                             &none       &none    &none     
                         >;
                 };
@@ -183,15 +183,15 @@
 
                 hypfun_layer {
                         label = "HPR FUN";
-// ------------------------------------------------------------------------------------------------------------------------------------------------
-// |    |          F7 |          F8 |           F9  |        |             |                   |        |         |        |         |     |      |
-// |    |          F4 |          F5 |           F6  |        |             |                   | RSHFT  | RGUI    | RALT   | RCTRL   |     | HYP  |
-// |    |          F1 |          F2 |           F3  |        |             |                   | LSHFT  | LGUI    | LALT   | LCTRL   |     | MEH  |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------
+// |    |          F7 |          F8 |           F9  |        |             |                   |        |         |        | HYPHFUN     |     |            |
+// |    |          F4 |          F5 |           F6  |        |             |                   | RSHFT  | RGUI    | RALT   | RCTRL       |     |       HYP  |
+// |    |          F1 |          F2 |           F3  |        |             |                   | LSHFT  | LGUI    | LALT   | LCTRL       |     |       MEH  |
 //                                  |               |        |             |                   |        |         |        |
                          bindings = <
-  &none  &kp HYPER(F7) &kp HYPER(F8)  &kp HYPER(F9)  &none      &none                            &none     &none    &none    &none     &none &none
-  &none  &kp HYPER(F4) &kp HYPER(F5)  &kp HYPER(F6)  &none      &none                            &kp RSHFT &kp RGUI &kp RALT &kp RCTRL &none &kp HYP
-  &none  &kp HYPER(F1) &kp HYPER(F2)  &kp HYPER(F3)  &none      &none                            &kp LSHFT &kp LGUI &kp LALT &kp LCTRL &none &kp MEH
+  &none  &kp HYPER(F7) &kp HYPER(F8)  &kp HYPER(F9)  &none      &none                            &none     &none    &none    &mo HYPHFUN   &none &none
+  &none  &kp HYPER(F4) &kp HYPER(F5)  &kp HYPER(F6)  &none      &none                            &kp RSHFT &kp RGUI &kp RALT &kp RCTRL     &none &kp   HYP
+  &none  &kp HYPER(F1) &kp HYPER(F2)  &kp HYPER(F3)  &none      &none                            &kp LSHFT &kp LGUI &kp LALT &kp LCTRL     &none &kp   MEH
                                       &kp HYPER(F10) &kp   DEL  &kp   BSPC                       &none     &none    &none     
                         >;
                 };
@@ -213,15 +213,15 @@
 
                 mehfun_layer {
                         label = "MEH FUN";
-// -----------------------------------------------------------------------------------------------------------------------------------------------
-// |    |         F7 |          F8 |          F9  |        |         |                        |        |         |        |         |     |      |
-// |    |         F4 |          F5 |          F6  |        |         |                        | RSHFT  | RGUI    | RALT   | RCTRL   |     | HYP  |
-// |    |         F1 |          F2 |          F3  |        |         |                        | LSHFT  | LGUI    | LALT   | LCTRL   |     | MEH  |
-//                                 |          F10 |        |         |                        |        |         |        |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |    |         F7 |          F8 |          F9  |        |         |                        |        |         | MEHHFUN     |             |     |              |
+// |    |         F4 |          F5 |          F6  |        |         |                        | RSHFT  | RGUI    | RALT        |       RCTRL |     |         HYP  |
+// |    |         F1 |          F2 |          F3  |        |         |                        | LSHFT  | LGUI    | LALT        |       LCTRL |     |         MEH  |
+//                                 |          F10 |        |         |                        |        |         |             |
                          bindings = <
-  &none  &kp MEHK(F7)  &kp MEHK(F8)  &kp MEHK(F9)   &none    &none                              &none     &none    &none    &none     &none &none
-  &none  &kp MEHK(F4)  &kp MEHK(F5)  &kp MEHK(F6)   &none    &none                              &kp RSHFT &kp RGUI &kp RALT &kp RCTRL &none &kp HYP
-  &none  &kp MEHK(F1)  &kp MEHK(F2)  &kp MEHK(F3)   &none    &none                              &kp LSHFT &kp LGUI &kp LALT &kp LCTRL &none &kp MEH
+  &none  &kp MEHK(F7)  &kp MEHK(F8)  &kp MEHK(F9)   &none    &none                              &none     &none    &kp MEHHFUN   &none         &none  &none
+  &none  &kp MEHK(F4)  &kp MEHK(F5)  &kp MEHK(F6)   &none    &none                              &kp RSHFT &kp RGUI &kp RALT      &kp   RCTRL   &none  &kp    HYP
+  &none  &kp MEHK(F1)  &kp MEHK(F2)  &kp MEHK(F3)   &none    &none                              &kp LSHFT &kp LGUI &kp LALT      &kp   LCTRL   &none  &kp    MEH
                                      &kp MEHK(F10)  &kp DEL  &kp BSPC                           &none     &none    &none     
                         >;
                 };
@@ -438,15 +438,15 @@
 
                 language_layer {
                         label = "LANG";
-// ------------------------------------------------------------------------------------------------------------------------------------------
-// |     |    LANG7 |    LANG8 |    LANG9  |          |              |                            |      |      |      |      |      |       |
-// |     |    LANG4 |    LANG5 |    LANG6  |          |              |                            |      |      |      |      |      |       | 
-// |     |    LANG1 |    LANG2 |    LANG3  |          |              |                            |      |      |      |      |      |       |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |     |    LANG7 |    LANG8 |    LANG9  |          |              |                            |      |      |      |                 |                |       |
+// |     |    LANG4 |    LANG5 |    LANG6  |          |              |                            |      |      |      |                 |                |       | 
+// |     |    LANG1 |    LANG2 |    LANG3  |          |              |                            |      |      |      |                 |                |       |
 //                                   |     |          |              |                            |      |      |      |
                          bindings = <
-   &none  &kp LANG7  &kp LANG8  &kp LANG9   &none       &none                                      &none  &none  &none  &none  &none  &none 
-   &none  &kp LANG4  &kp LANG5  &kp LANG6   &none       &none                                      &none  &none  &none  &none  &none  &none
-   &none  &kp LANG1  &kp LANG2  &kp LANG3   &none       &none                                      &none  &none  &none  &none  &none  &none
+   &none  &kp LANG7  &kp LANG8  &kp LANG9   &none       &none                                      &none  &none  &none  &none              &none              &none 
+   &none  &kp LANG4  &kp LANG5  &kp LANG6   &none       &none                                      &none  &none  &none  &none              &none              &none
+   &none  &kp LANG1  &kp LANG2  &kp LANG3   &none       &none                                      &none  &none  &none  &mo INTERNATIONAL  &none              &none
                                 &none       &kp    TAB  &kp   SPACE                                &none  &none  &none 
                         >;
                 };
