@@ -69,10 +69,10 @@
 // | GRAVE |  Z  |  X  |  C  |  V  |  B  |                                                            |  N  |  M   |  ,   |  .  |  /  |  ' |
 //                     | ESC | SPC | TAB |                                                            | RET |  DEL | BSPC |
                         bindings = <
-   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &kp        T              &kp          Y   &kp               U     &kp          I      &lt MEHFUN  O   &lt HYPFUN         P    &lt FUN  BACKSLASH
-   &mt HYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT  G              &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &kp                SEMI &mt HYP  DQT
-   &mt MEH    GRAVE &kp      Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT  B              &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL   DOT &lt LANGUAGE       FSLH &mt MEH  SQT 
-                                        &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE  SPACE              &lt SYM      RET &lt NUM           DEL   &lt APPLAUNCH BSPC 
+   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &lt NPCTRL  T             &lt MEHFUN   Y   &lt HYPFUN        U     &lt FUN      I      &kp         O   &lt NPSYM          P    &lt NUMPAD  BACKSLASH
+   &mt HYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT   G             &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &kp                SEMI &mt HYP     DQT
+   &mt MEH    GRAVE &kp      Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT   B             &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL   DOT &lt LANGUAGE       FSLH &mt MEH     SQT 
+                                        &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE   SPACE             &lt SYM      RET &lt NUM           DEL   &lt APPLAUNCH BSPC 
                         >;
                 };
 
@@ -131,8 +131,8 @@
                         bindings = <
    &none   &none &none     &none    &none    &none                                                    &kp K_PASTE &kp    K_COPY &kp   K_CUT &kp K_UNDO &kp K_REDO  &kp      INS
    &kp HYP &none &kp LCTRL &kp LALT &kp LGUI &kp LSHFT                                                &kp LEFT    &kp      DOWN &kp      UP &kp RIGHT  &none       &none   
-   &kp MEH &none &kp RCTRL &kp RALT &kp RGUI &kp RSHFT                                                &kp HOME    &kp PAGE_DOWN &kp PAGE_UP &kp END    &none       &none
-                           &none    &none    &kp K_APP                                                &kp RET     &kp DEL      &kp  BSPC      
+   &kp MEH &none &kp RCTRL &kp RALT &kp RGUI &kp RSHFT                                                &kp HOME    &kp PAGE_DOWN &kp PAGE_UP &kp END    &none       &kp    K_APP
+                           &kp DEL  &none    &kp BSPC                                                 &kp RET     &kp DEL      &kp  BSPC      
                         >;
                 };
 
@@ -369,10 +369,10 @@
 // |       C_AL_WORD        |     C_AL_SPREADSHEET |     C_AL_PRESENTATION |     C_AL_DATABASE           |      C_AL_JOURNAL      |      C_AL_GRAPHICS_EDITOR |                        |           C_AL_MOVIE_BROWSER |              C_AL_FINANCE      |           C_AL_SPELLCHECK          |   C_AL_GRAMMAR_CHECK    |      C_AL_CONTEXT_AWARE_DESKTOP_ASSISTANT       |          C_AL_OEM_FEATURES |
 //                                                 |     C_AL_PRESENTATION |     C_AL_PREV_TASK          |      C_AL_NEXT_TASK    |      C_AL_SELECT_TASK     |                        |                              |                                |                                    | 
                          bindings = <
-   &kp     C_AL_MY_COMPUTER   &kp C_AL_DOCUMENTS     &kp C_AL_FILE_BROWSER   &kp C_AL_WWW                   &kp K_WWW               &kp  C_AL_CALCULATOR                                 &kp       C_AL_IMAGE_BROWSER   &kp          C_AL_NEWS           &kp      C_AL_TASK_MANAGER         &kp       C_AL_KEYBOARD_LAYOUT   &kp   C_AL_COMMAND_LINE                       &kp     C_AL_HELP
+   &kp     C_AL_MY_COMPUTER   &kp C_AL_DOCUMENTS     &kp C_AL_FILE_BROWSER   &kp C_AL_WWW                   &kp K_WWW               &kp  C_AL_CALCULATOR                                 &kp       C_AL_IMAGE_BROWSER   &kp          C_AL_NEWS           &kp      C_AL_TASK_MANAGER         &kp       C_AL_KEYBOARD_LAYOUT   &kp   C_AL_CONTROL_PANEL                      &kp     C_AL_HELP
    &mt HYP C_AL_EMAIL         &kp C_AL_CALENDAR      &kp C_AL_CONTACTS       &kp C_AL_INSTANT_MESSAGING     &kp C_AL_NETWORK_CHAT   &kp  C_AL_TEXT_EDITOR                                &mt RSHFT C_AL_AUDIO_BROWSER   &mt RGUI     C_AL_VOICEMAIL      &mt RALT C_AL_AV_CAPTURE_PLAYBACK  &mt RCTRL C_AL_THESAURUS         &kp   C_AL_TELEPHONY_DIALER                   &mt HYP K_HELP
    &mt MEH C_AL_WORD          &kp C_AL_SPREADSHEET   &kp C_AL_PRESENTATION   &kp C_AL_DATABASE              &kp C_AL_JOURNAL        &kp  C_AL_GRAPHICS_EDITOR                            &mt LSHFT C_AL_MOVIE_BROWSER   &mt LGUI     C_AL_FINANCE        &mt LALT C_AL_SPELLCHECK           &mt LCTRL C_AL_GRAMMAR_CHECK     &kp   C_AL_CONTEXT_AWARE_DESKTOP_ASSISTANT    &mt MEH C_AL_OEM_FEATURES
-                                                                             &kp C_AL_PREV_TASK             &kp C_AL_NEXT_TASK      &kp  C_AL_SELECT_TASK                                &kp       C_AL_SCREEN_SAVER    &lt CONSUMER C_AL_CONTROL_PANEL  &none 
+                                                                             &kp C_AL_PREV_TASK             &kp C_AL_NEXT_TASK      &kp  C_AL_SELECT_TASK                                &kp       C_AL_SCREEN_SAVER    &kp          C_AL_COMMAND_LINE   &none 
                         >;
                 };
 
