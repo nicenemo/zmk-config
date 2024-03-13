@@ -75,10 +75,10 @@
 // | GRAVE |  Z  |  X  |  C  |  V  |  B  |                                                            |  N  |  M   |  ,   |  .  |  /  |  ' |
 //                     | ESC | SPC | TAB |                                                            | RET |  DEL | BSPC |
                         bindings = <
-   &lt CONFIG TILDE &lt MISC Q &lt DISPLAY W  &lt POWER E   &kp      R       &lt NPCTRL  T             &lt MEHFUN   Y   &lt HYPFUN        U     &lt FUN      I      &kp         O   &lt NPSYM          P    &lt NUMPAD  BACKSLASH
-   &mt LHYP    HASH  &kp      A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT   G             &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL   L   &kp                SEMI &mt RHYP     DQT
-   &mt LMEH    GRAVE &kp      Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT   B             &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL   DOT &lt LANGUAGE       FSLH &mt RMEH     SQT 
-                                        &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE   SPACE             &lt SYM      RET &lt NUM           DEL   &lt APPLAUNCH BSPC 
+   &lt CONFIG TILDE &lt MISC  Q &lt DISPLAY W   &lt POWER E    &kp    R       &lt NPCTRL  T             &lt MEHFUN   Y   &lt HYPFUN        U     &lt FUN      I      &lt  LANGUAGE O   &lt NPSYM P    &lt NUMPAD  BACKSLASH
+   &mt LHYP    HASH  &mt LMEH A &mt LCTRL   S  &mt LALT  D   &mt LGUI F       &mt LSHFT   G             &mt RSHFT    H   &mt RGUI          J     &mt RALT     K      &mt RCTRL    L   &mt RMEH   SEMI &mt RHYP    DQT
+   &mt RHYP    GRAVE &mt RMEH Z &mt RCTRL   X  &mt RALT  C   &mt RGUI V       &mt RSHFT   B             &mt LSHFT    N   &mt LGUI          M     &mt LALT COMMA      &mt LCTRL    DOT &mt LMEH   FSLH &mt LHYP    SQT 
+                                         &lt VOLUME ESC  &lt NAV  TAB     &lt MOUSE   SPACE             &lt SYM      RET &lt NUM           DEL   &lt APPLAUNCH BSPC 
                         >;
                 };
 
@@ -90,9 +90,9 @@
 // | GRAVE |  /  |  ,  |  "  |  P  |  Z  |                                                            |  B  |  M   |  J   |  .  |  Y  |  ' |
 //                     | ESC | SPC | TAB |                                                            | RET |  DEL | BSPC |
                         bindings = <
-   &lt CONFIG TILDE &lt MISC X        &lt DISPLAY V         &lt POWER     L   &kp      C       &lt NPCTRL  W                      &lt MEHFUN   K   &lt HYPFUN  H  &lt FUN  G      &kp         F   &lt NPSYM    Q    &lt NUMPAD  BACKSLASH
-   &mt LHYP    HASH  &kp      U        &mt LCTRL   I         &mt LALT      A   &mt LGUI E       &mt LSHFT   O                      &mt RSHFT    S   &mt RGUI    N  &mt RALT R      &mt RCTRL   T   &kp          D    &mt RHYP     DQT
-   &mt LMEH    GRAVE &kp      KP_SLASH &mt RCTRL   COMMA     &mt RALT   SEMI   &mt RGUI P       &mt RSHFT   Z                      &mt LSHFT    B   &mt LGUI    M  &mt LALT J      &mt LCTRL   DOT &lt LANGUAGE Y    &mt RMEH     SQT 
+   &lt CONFIG TILDE &lt MISC  X        &lt DISPLAY V         &lt POWER     L   &kp      C       &lt NPCTRL  W                      &lt MEHFUN   K   &lt HYPFUN  H  &lt FUN  G      &lt LANGUAGE F   &lt NPSYM  Q    &lt NUMPAD  BACKSLASH
+   &mt LHYP    HASH  &mt LMEH U        &mt LCTRL   I         &mt LALT      A   &mt LGUI E       &mt LSHFT   O                      &mt RSHFT    S   &mt RGUI    N  &mt RALT R      &mt RCTRL    T   &mt RMEH   D    &mt RHYP     DQT
+   &mt RHYP    GRAVE &mt RMEH KP_SLASH &mt RCTRL   COMMA     &mt RALT   SEMI   &mt RGUI P       &mt RSHFT   Z                      &mt LSHFT    B   &mt LGUI    M  &mt LALT J      &mt LCTRL    DOT &mt LMEH   Y    &mt LHYP     SQT 
                                                             &lt VOLUME  ESC   &lt NAV  TAB     &lt MOUSE   SPACE                  &lt SYM      RET &lt NUM   DEL  &lt APPLAUNCH BSPC 
                         >;
                 };
@@ -445,15 +445,15 @@
 
                 language_layer {
                         label = "LANG";
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |     |    LANG7 |    LANG8 |    LANG9  |          |              |                            |      |      |      |                 |                |       |
-// |     |    LANG4 |    LANG5 |    LANG6  |          |              |                            |      |      |      |                 |                |       | 
-// |     |    LANG1 |    LANG2 |    LANG3  |          |              |                            |      |      |      |                 |                |       |
-//                                   |     |          |              |                            |      |      |      |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------
+// |     |    LANG7 |    LANG8 |    LANG9  |          |              |                            |      |      |                  |        |       |       |
+// |     |    LANG4 |    LANG5 |    LANG6  |          |              |                            |      |      |                  |        |       |       | 
+// |     |    LANG1 |    LANG2 |    LANG3  |          |              |                            |      |      |                  |        |       |       |
+//                                   |     |          |              |                            |      |      |                  |
                          bindings = <
-   &none  &kp LANG7  &kp LANG8  &kp LANG9   &none       &none                                      &none  &none  &none  &none              &none              &none 
-   &none  &kp LANG4  &kp LANG5  &kp LANG6   &none       &none                                      &none  &none  &none  &none              &none              &none
-   &none  &kp LANG1  &kp LANG2  &kp LANG3   &none       &none                                      &none  &none  &none  &mo INTERNATIONAL  &none              &none
+   &none  &kp LANG7  &kp LANG8  &kp LANG9   &none       &none                                      &none  &none  &mo  INTERNATIONAL   &none   &none   &none 
+   &none  &kp LANG4  &kp LANG5  &kp LANG6   &none       &none                                      &none  &none  &none                &none   &none   &none
+   &none  &kp LANG1  &kp LANG2  &kp LANG3   &none       &none                                      &none  &none  &none                &none   &none   &none
                                 &none       &kp    TAB  &kp   SPACE                                &none  &none  &none 
                         >;
                 };
