@@ -16,7 +16,6 @@
 #include "consumer_extra_keys.h"
 #include "custom_modifiers.h"
 
-#define COPILOT  LSGK(F23)
 #define SOUSCHEF RCAK(F24)
 
 
