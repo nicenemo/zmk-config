@@ -407,31 +407,31 @@
 
                 international_layer {
                         label = "INT";
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |       |     INT7 |     INT8 |        INT9  |          |             |                                                      |                   |      |      |      |      |       |
-// |       |     INT4 |     INT5 |        INT6  |          |             |                                                      |                   |      |      |      |      |       | 
-// |       |     INT1 |     INT2 |        INT3  |          |             |                                                      |                   |      |      |      |      |       |
-//                               |              |      TAB |       SPACE |                                                      |                   |      |      |
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |     INT7 |     INT8 |        INT9  |          |             |                                                      |       RAG         |        RSC    |      RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |     INT4 |     INT5 |        INT6  |          |             |                                                      |       RCTRL       |        RSHFT  |      RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |     INT1 |     INT2 |        INT3  |          |             |                                                      |       LCTRL       |        LSHFT  |      LALT |      LGUI |            |               |
+//                               |              |      TAB |       SPACE |                                                      |                   |               |           |
                          bindings = < 
-     &none   &kp INT7   &kp INT8    &kp   INT9   &none       &none                                                                &none               &none  &none  &none  &none  &none 
-     &none   &kp INT4   &kp INT5    &kp   INT6   &none       &none                                                                &none               &none  &none  &none  &none  &none
-     &none   &kp INT1   &kp INT2    &kp   INT3   &none       &none                                                                &none               &none  &none  &none  &none  &none
-                                    &none        &kp   TAB   &kp   SPACE                                                          &tog INTERNATIONAL  &none  &none 
+     &none   &kp INT7   &kp INT8    &kp   INT9   &none       &none                                                                &kp   RAG            &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp INT4   &kp INT5    &kp   INT6   &none       &none                                                                &kp   RCTRL          &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp INT1   &kp INT2    &kp   INT3   &none       &none                                                                &kp   LCTRL          &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                    &none        &kp   TAB   &kp   SPACE                                                          &tog  INTERNATIONAL  &none         &none 
                         >;
                 };
 
                 language_layer {
                         label = "LANG";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------
-// |       |     LANG7 |     LANG8 |       LANG9  |            |             |                                                  |             |       |       |        |       |       |
-// |       |     LANG4 |     LANG5 |       LANG6  |            |             |                                                  |             |       |       |        |       |       | 
-// |       |     LANG1 |     LANG2 |       LANG3  |            |             |                                                  |             |       |       |        |       |       |
-//                                 |              |        TAB |             |                                                  |             |       |       |
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------
+// |       |     LANG7 |     LANG8 |       LANG9  |            |             |                                                  |       RAG      |       RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |     LANG4 |     LANG5 |       LANG6  |            |             |                                                  |       RCTRL    |       RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |     LANG1 |     LANG2 |       LANG3  |            |             |                                                  |       LCTRL    |       LSHFT |       LALT |      LGUI |            |               |
+//                                 |              |        TAB |             |                                                  |                |             |       |
                          bindings = <
-     &none   &kp LANG7   &kp LANG8   &kp   LANG9     &none       &none                                                            &none           &none   &none   &none    &none   &none 
-     &none   &kp LANG4   &kp LANG5   &kp   LANG6     &none       &none                                                            &none           &none   &none   &none    &none   &none
-     &none   &kp LANG1   &kp LANG2   &kp   LANG3     &none       &none                                                            &none           &none   &none   &none    &none   &none
-                                     &none           &kp   TAB   &kp   SPACE                                                      &tog LANGUAGE   &none   &none 
+     &none   &kp LANG7   &kp LANG8   &kp   LANG9     &none       &none                                                            &kp   RAG        &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LANG4   &kp LANG5   &kp   LANG6     &none       &none                                                            &kp   RCTRL      &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LANG1   &kp LANG2   &kp   LANG3     &none       &none                                                            &kp   LCTRL      &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                     &none           &kp   TAB   &kp   SPACE                                                      &tog  LANGUAGE   &none         &none 
                         >;
                 };
 
