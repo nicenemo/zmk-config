@@ -38,11 +38,11 @@
 #define MOUSE          13
 #define CONFIG         14
 #define POWER          15
-#define APPLAUNCH      16
-#define CONSUMER       17
-#define DISPLAY        18
-#define INTERNATIONAL  19
-#define LANGUAGE       20
+#define DISPLAY        16
+#define INTERNATIONAL  17
+#define LANGUAGE       18
+#define APPLAUNCH      19
+#define CONSUMER       20
 #define EMPTY          21
 
 / {
@@ -387,35 +387,7 @@
                         >;
                 };
 
-                application_launch_layer {
-                        label = "APPL";
-// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |        C_AL_MY_COMPUTER |    C_AL_DOCUMENTS   |     C_AL_FILE_BROWSER |     C_AL_WWW                |     K_WWW             |      C_AL_CALCULATOR      |                        |     C_AL_IMAGE_BROWSER |     C_AL_NEWS         |     C_AL_TASK_MANAGER        |    C_AL_KEYBOARD_LAYOUT  |    C_AL_COMMAND_LINE                    |     C_AL_HELP         |
-// |        C_AL_EMAIL       |    C_AL_CALENDAR    |     C_AL_CONTACTS     |     C_AL_INSTANT_MESSAGING  |     C_AL_NETWORK_CHAT |      C_AL_TEXT_EDITOR     |                        |     C_AL_AUDIO_BROWSER |     C_AL_VOICEMAIL    |     C_AL_AV_CAPTURE_PLAYBACK |    C_AL_THESAURUS        |    C_AL_TELEPHONY_DIALER                |     K_HELP            |
-// |        C_AL_WORD        |    C_AL_SPREADSHEET |     C_AL_PRESENTATION |     C_AL_DATABASE           |     C_AL_JOURNAL      |      C_AL_GRAPHICS_EDITOR |                        |     C_AL_MOVIE_BROWSER |     C_AL_FINANCE      |     C_AL_SPELLCHECK          |    C_AL_GRAMMAR_CHECK    |    C_AL_CONTEXT_AWARE_DESKTOP_ASSISTANT |     C_AL_OEM_FEATURES |
-//                                                 |     C_AL_PRESENTATION |     C_AL_PREV_TASK          |     C_AL_NEXT_TASK    |                           |                        |     C_AL_SCREEN_SAVER  |     C_AL_COMMAND_LINE |     C_AL_SELECT_TASK         |
-                         bindings = <
-   &kp      C_AL_MY_COMPUTER  &kp C_AL_DOCUMENTS     &kp C_AL_FILE_BROWSER   &kp C_AL_WWW                  &kp K_WWW               &kp  C_AL_CALCULATOR                                 &kp C_AL_IMAGE_BROWSER   &kp C_AL_NEWS           &kp C_AL_TASK_MANAGER         &kp C_AL_KEYBOARD_LAYOUT   &kp C_AL_CONTROL_PANEL                     &kp C_AL_HELP
-   &mt LHYPER C_AL_EMAIL        &kp C_AL_CALENDAR      &kp C_AL_CONTACTS       &kp C_AL_INSTANT_MESSAGING    &kp C_AL_NETWORK_CHAT   &kp  C_AL_TEXT_EDITOR                                &kp C_AL_AUDIO_BROWSER   &kp C_AL_VOICEMAIL      &kp C_AL_AV_CAPTURE_PLAYBACK  &kp C_AL_THESAURUS         &kp C_AL_TELEPHONY_DIALER                  &kp K_HELP
-   &mt LMEH C_AL_WORD         &kp C_AL_SPREADSHEET   &kp C_AL_PRESENTATION   &kp C_AL_DATABASE             &kp C_AL_JOURNAL        &kp  C_AL_GRAPHICS_EDITOR                            &kp C_AL_MOVIE_BROWSER   &kp C_AL_FINANCE        &kp C_AL_SPELLCHECK           &kp C_AL_GRAMMAR_CHECK     &kp C_AL_CONTEXT_AWARE_DESKTOP_ASSISTANT   &kp C_AL_OEM_FEATURES
-                                                                             &kp C_AL_PREV_TASK            &kp C_AL_NEXT_TASK      &none                                                &kp C_AL_SCREEN_SAVER    &kp C_AL_COMMAND_LINE   &kp C_AL_SELECT_TASK 
-                        >;
-                };
 
-                consumer_layer {
-                        label = "CONSUMER";
-// ----------------------------     ---------------------------------------------------------------------------------------------------
-// |       |      |      |     |      |         |                                          |      |      |      |      |      |       |
-// |       |      |      |     |      |         |                                          |      |      |      |      |      |       | 
-// |       |      |      |     |      |         |                                          |      |      |      |      |      |       |
-//                       |     |      |         |                                          |      |      |      |
-                         bindings = <
-   &kp   AT  &none       &none  &none  &none  &none                                          &none  &none  &none  &none  &none  &none 
-   &none     &none       &none  &none  &none  &none                                          &none  &none  &none  &none  &none  &none
-   &none     &none       &none  &none  &none  &none                                          &none  &none  &none  &none  &none  &none
-                                &none  &none  &none                                          &none  &none  &none 
-                        >;
-                };
 
                 display_layer {
                         label = "DISPLAY";
@@ -460,6 +432,36 @@
    &none  &kp LANG4  &kp LANG5  &kp LANG6   &none       &none                           &none           &none   &none   &none    &none   &none
    &none  &kp LANG1  &kp LANG2  &kp LANG3   &none       &none                           &none           &none   &none   &none    &none   &none
                                 &none       &kp    TAB  &kp   SPACE                     &tog LANGUAGE   &none   &none 
+                        >;
+                };
+
+                application_launch_layer {
+                        label = "APPL";
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |        C_AL_MY_COMPUTER |    C_AL_DOCUMENTS   |     C_AL_FILE_BROWSER |     C_AL_WWW                |     K_WWW             |      C_AL_CALCULATOR      |                        |     C_AL_IMAGE_BROWSER |     C_AL_NEWS         |     C_AL_TASK_MANAGER        |    C_AL_KEYBOARD_LAYOUT  |    C_AL_COMMAND_LINE                    |     C_AL_HELP         |
+// |        C_AL_EMAIL       |    C_AL_CALENDAR    |     C_AL_CONTACTS     |     C_AL_INSTANT_MESSAGING  |     C_AL_NETWORK_CHAT |      C_AL_TEXT_EDITOR     |                        |     C_AL_AUDIO_BROWSER |     C_AL_VOICEMAIL    |     C_AL_AV_CAPTURE_PLAYBACK |    C_AL_THESAURUS        |    C_AL_TELEPHONY_DIALER                |     K_HELP            |
+// |        C_AL_WORD        |    C_AL_SPREADSHEET |     C_AL_PRESENTATION |     C_AL_DATABASE           |     C_AL_JOURNAL      |      C_AL_GRAPHICS_EDITOR |                        |     C_AL_MOVIE_BROWSER |     C_AL_FINANCE      |     C_AL_SPELLCHECK          |    C_AL_GRAMMAR_CHECK    |    C_AL_CONTEXT_AWARE_DESKTOP_ASSISTANT |     C_AL_OEM_FEATURES |
+//                                                 |     C_AL_PRESENTATION |     C_AL_PREV_TASK          |     C_AL_NEXT_TASK    |                           |                        |     C_AL_SCREEN_SAVER  |     C_AL_COMMAND_LINE |     C_AL_SELECT_TASK         |
+                         bindings = <
+   &kp      C_AL_MY_COMPUTER  &kp C_AL_DOCUMENTS     &kp C_AL_FILE_BROWSER   &kp C_AL_WWW                  &kp K_WWW               &kp  C_AL_CALCULATOR                                 &kp C_AL_IMAGE_BROWSER   &kp C_AL_NEWS           &kp C_AL_TASK_MANAGER         &kp C_AL_KEYBOARD_LAYOUT   &kp C_AL_CONTROL_PANEL                     &kp C_AL_HELP
+   &mt LHYPER C_AL_EMAIL        &kp C_AL_CALENDAR      &kp C_AL_CONTACTS       &kp C_AL_INSTANT_MESSAGING    &kp C_AL_NETWORK_CHAT   &kp  C_AL_TEXT_EDITOR                                &kp C_AL_AUDIO_BROWSER   &kp C_AL_VOICEMAIL      &kp C_AL_AV_CAPTURE_PLAYBACK  &kp C_AL_THESAURUS         &kp C_AL_TELEPHONY_DIALER                  &kp K_HELP
+   &mt LMEH C_AL_WORD         &kp C_AL_SPREADSHEET   &kp C_AL_PRESENTATION   &kp C_AL_DATABASE             &kp C_AL_JOURNAL        &kp  C_AL_GRAPHICS_EDITOR                            &kp C_AL_MOVIE_BROWSER   &kp C_AL_FINANCE        &kp C_AL_SPELLCHECK           &kp C_AL_GRAMMAR_CHECK     &kp C_AL_CONTEXT_AWARE_DESKTOP_ASSISTANT   &kp C_AL_OEM_FEATURES
+                                                                             &kp C_AL_PREV_TASK            &kp C_AL_NEXT_TASK      &none                                                &kp C_AL_SCREEN_SAVER    &kp C_AL_COMMAND_LINE   &kp C_AL_SELECT_TASK 
+                        >;
+                };
+
+                consumer_layer {
+                        label = "CONSUMER";
+// ----------------------------     ---------------------------------------------------------------------------------------------------
+// |       |      |      |     |      |         |                                          |      |      |      |      |      |       |
+// |       |      |      |     |      |         |                                          |      |      |      |      |      |       | 
+// |       |      |      |     |      |         |                                          |      |      |      |      |      |       |
+//                       |     |      |         |                                          |      |      |      |
+                         bindings = <
+   &kp   AT  &none       &none  &none  &none  &none                                          &none  &none  &none  &none  &none  &none 
+   &none     &none       &none  &none  &none  &none                                          &none  &none  &none  &none  &none  &none
+   &none     &none       &none  &none  &none  &none                                          &none  &none  &none  &none  &none  &none
+                                &none  &none  &none                                          &none  &none  &none 
                         >;
                 };
 
