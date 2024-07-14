@@ -157,14 +157,14 @@
             		bindings = <&tog HYPHFUN>;
         	};
 
-		combo_hyper_function_keys {
+		combo_meh_function_keys {
             		layers = <NGRAM QWERTY  MEHFUN>;
             		timeout-ms = <25>;
             		key-positions = <0 32>;
             		bindings = <&tog MEHFUN>;
         	};
 
-		combo_hyper_high_function_keys {
+		combo_meh_high_function_keys {
             		layers = <NGRAM QWERTY MEHHFUN>;
             		timeout-ms = <25>;
             		key-positions = <0 20>;
