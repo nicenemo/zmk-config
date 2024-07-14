@@ -146,28 +146,28 @@
 		combo_hyper_function_keys {
             		layers = <NGRAM QWERTY HYPFUN>;
             		timeout-ms = <25>;
-            		key-positions = <0 31>;
+            		key-positions = <12 31>;
             		bindings = <&tog HYPFUN>;
         	};
 
 		combo_hyper_high_function_keys {
             		layers = <NGRAM QWERTY HYPHFUN>;
             		timeout-ms = <25>;
-            		key-positions = <0 19>;
+            		key-positions = <12 19>;
             		bindings = <&tog HYPHFUN>;
         	};
 
 		combo_meh_function_keys {
             		layers = <NGRAM QWERTY MEHFUN>;
             		timeout-ms = <25>;
-            		key-positions = <0 32>;
+            		key-positions = <24 32>;
             		bindings = <&tog MEHFUN>;
         	};
 
 		combo_meh_high_function_keys {
             		layers = <NGRAM QWERTY MEHHFUN>;
             		timeout-ms = <25>;
-            		key-positions = <0 20>;
+            		key-positions = <24 20>;
             		bindings = <&tog MEHHFUN>;
         	};
 
