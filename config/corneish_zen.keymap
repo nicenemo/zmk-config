@@ -144,7 +144,7 @@
         	};
 
 		combo_hyper_function_keys {
-            		layers = <NGRAM QWERTY  HYPFUN>;
+            		layers = <NGRAM QWERTY HYPFUN>;
             		timeout-ms = <25>;
             		key-positions = <0 31>;
             		bindings = <&tog HYPFUN>;
@@ -158,7 +158,7 @@
         	};
 
 		combo_meh_function_keys {
-            		layers = <NGRAM QWERTY  MEHFUN>;
+            		layers = <NGRAM QWERTY MEHFUN>;
             		timeout-ms = <25>;
             		key-positions = <0 32>;
             		bindings = <&tog MEHFUN>;
