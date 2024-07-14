@@ -150,29 +150,29 @@
                 default_layer {
                         label = "NGRAM";
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |        DQT   |         B  |            Y  |           O   |            U   |               SQT   |                         |             SEMI |            L   |            D    |              W  |            V  |            Z         |
-// |        HASH  |         C  |            I  |           E   |            A   |               COMMA |                         |             DOT  |            H   |            T    |              S  |            N  |            Q         |
-// |        GRAVE |         G  |            X  |           J   |            K   |               MINUS |                         |             FSLH |            R   |            M    |              F  |            P  |            BACKSLASH |       
-//                                             |           ESC |            TAB |               SPACE |                         |             RET  |            DEL |            BSPC |
+// |          DQT   |         B  |            Y  |           O   |            U   |               SQT   |                       |             SEMI |            L   |            D    |              W  |            V  |            Z         |
+// |          HASH  |         C  |            I  |           E   |            A   |               COMMA |                       |             DOT  |            H   |            T    |              S  |            N  |            Q         |
+// |          GRAVE |         G  |            X  |           J   |            K   |               MINUS |                       |             FSLH |            R   |            M    |              F  |            P  |            BACKSLASH |       
+//                                               |           ESC |            TAB |               SPACE |                       |             RET  |            DEL |            BSPC |
                         bindings = <
-   &mt RHYPER DQT    &mt RMEH B   &mt LCG     Y    &mt LCA    O    &mt LSC    U     &mt LAG       SQT                               &mt RAG     SEMI   &mt RSC    L     &mt RCA    D      &mt RCG      W    &mt LMEH   V    &mt LHYPER   Z 
-   &mt LHYPER HASH   &mt LMEH C   &mt LGUI    I    &mt LALT   E    &mt LSHFT  A     &mt LCTRL     COMMA                             &mt RCTRL   DOT    &mt RSHFT  H     &mt RALT   T      &mt RGUI     S    &mt RMEH   N    &mt RHYPER   Q
-   &kp      GRAVE  &kp      G   &mt RGUI    X    &mt RALT   J    &mt RSHFT  K     &mt RCTRL     MINUS                             &mt LCTRL   FSLH   &mt LSHFT  R     &mt LALT   M      &mt LGUI     F    &kp        P    &lt MOUSE  BACKSLASH 
-                                                 &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                             &lt NUM     RET    &lt SYM1   DEL   &lt SYM2   BSPC 
+   &mt RHYPER DQT    &mt RMEH B   &mt LCG     Y    &mt LCA    O    &mt LSC    U     &mt LAG       SQT                             &mt RAG     SEMI   &mt RSC    L     &mt RCA    D      &mt RCG      W    &mt LMEH   V    &mt LHYPER Z 
+   &mt LHYPER HASH   &mt LMEH C   &mt LGUI    I    &mt LALT   E    &mt LSHFT  A     &mt LCTRL     COMMA                           &mt RCTRL   DOT    &mt RSHFT  H     &mt RALT   T      &mt RGUI     S    &mt RMEH   N    &mt RHYPER Q
+   &kp        GRAVE  &kp      G   &mt RGUI    X    &mt RALT   J    &mt RSHFT  K     &mt RCTRL     MINUS                           &mt LCTRL   FSLH   &mt LSHFT  R     &mt LALT   M      &mt LGUI     F    &kp        P    &lt MOUSE  BACKSLASH 
+                                                   &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                           &lt NUM     RET    &lt SYM1   DEL   &lt SYM2   BSPC 
                         >;
                 };
 
                 qwerty_layer {
                         label = "QWERTY";
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |        DQT   |         Q  |            W  |           E   |            R   |               T     |                         |             Y   |            U   |            I    |              O  |            P  |           \        |
-// |        HASH  |         A  |            S  |           D   |            F   |               G     |                         |             H   |            J   |            K    |              L  |            ;  |           "        |
-// |        GRAVE |         Z  |            X  |           C   |            V   |               B     |                         |             N   |            M   |            ,    |              .  |            /  |           '        |       
-//                                             |           ESC |            TAB |               SPACE |                         |             RET |            DEL |            BSPC |
+// |          DQT   |         Q  |            W  |           E   |            R   |               T     |                       |             Y   |            U   |            I    |              O  |            P  |            \        |
+// |          HASH  |         A  |            S  |           D   |            F   |               G     |                       |             H   |            J   |            K    |              L  |            ;  |            "        |
+// |          GRAVE |         Z  |            X  |           C   |            V   |               B     |                       |             N   |            M   |            ,    |              .  |            /  |            '        |       
+//                                               |           ESC |            TAB |               SPACE |                       |             RET |            DEL |            BSPC |
                         bindings = <
-   &mt RHYPER DQT    &kp         Q   &mt LCG     W    &mt LCA    E    &mt LSC    R     &mt LAG       T                                 &mt RAG     Y     &mt RSC    U     &mt RCA    I      &mt RCG      O    &mt LMEH   P    &mt LHYPER  BACKSLASH
-   &mt LHYPER HASH   &mt LMEH A   &mt LGUI    S    &mt LALT   D    &mt LSHFT  F     &mt LCTRL     G                                 &mt RCTRL   H     &mt RSHFT  J     &mt RALT   K      &mt RGUI     L    &mt RMEH   SEMI &mt RHYPER  DQT
-   &mt LCA  GRAVE  &kp      Z   &mt RGUI    X    &mt RALT   C    &mt RSHFT  V     &mt RCTRL     B                                 &mt LCTRL   N     &mt LSHFT  M     &mt LALT   COMMA  &mt LGUI     DOT  &mt RAG    FSLH &lt MOUSE SQT 
+   &mt RHYPER DQT    &kp      Q   &mt LCG     W    &mt LCA    E    &mt LSC    R     &mt LAG       T                               &mt RAG     Y     &mt RSC    U     &mt RCA    I      &mt RCG      O    &mt LMEH   P    &mt LHYPER BACKSLASH
+   &mt LHYPER HASH   &mt LMEH A   &mt LGUI    S    &mt LALT   D    &mt LSHFT  F     &mt LCTRL     G                               &mt RCTRL   H     &mt RSHFT  J     &mt RALT   K      &mt RGUI     L    &mt RMEH   SEMI &mt RHYPER DQT
+   &mt LCA    GRAVE  &kp      Z   &mt RGUI    X    &mt RALT   C    &mt RSHFT  V     &mt RCTRL     B                               &mt LCTRL   N     &mt LSHFT  M     &mt LALT   COMMA  &mt LGUI     DOT  &mt RAG    FSLH &lt MOUSE  SQT 
                                                  &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                             &lt NUM     RET   &lt SYM1   DEL   &lt SYM2   BSPC 
                         >;
                 };
@@ -180,210 +180,210 @@
 
                 number_layer {
                         label = "NUM";
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// | !  |  7  |  8  |  9  | * | / |                                                                 |          D      |           E |          F |           |      LMEH |    LHYPER  |
-// | -  |  4  |  5  |  6  | + | ^ |                                                                 |          A      |           B |          C |           |      RMEH |    RHYPER  |
-// | .  |  1  |  2  |  3  | , | % |                                                                 |                 |             |            |           |           |          |
-//                  |  0  | = | ~ |                                                                 |                 |             |            |
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   %           |     7        |     8        |     9        |     :        | k        |                                     |          D        |           E       |          F |           |      LMEH |    LHYPER  |
+// |   +           |     4        |     5        |     6        |     -        | j        |                                     |          A        |           B       |          C |           |      RMEH |    RHYPER  |
+// |   *           |     1        |     2        |     3        |     /        | G        |                                     |          SOUSCHEF |                   |            |           |           |            |
+//                                               |     0        |     ,        | .        |                                     |                   |           COPILOT |          = |
                             bindings = <
-   &kp PERCENT     &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9   &kp COLON    &kp K                       &mt RAG   D        &mt RSC   E   &mt RCA  F    &kp RCG     &kp LMEH  &kp LHYPER
-   &kp KP_PLUS     &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6   &kp KP_MINUS &kp J                       &mt RCTRL A        &mt RSHFT B   &mt RALT C    &kp RGUI    &kp RMEH  &kp RHYPER
-   &kp KP_ASTERISK &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3   &kp KP_SLASH &kp LS(G)                   &mt LCTRL SOUSCHEF &kp LSHFT     &kp LALT      &kp LGUI    &none     &tog NUM
-                                             &kp NUMBER_0   &kp COMMA    &kp DOT                     &none              &kp COPILOT   &kp EQL      
+   &kp PERCENT       &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp COLON      &kp K                                            &mt RAG   D          &mt RSC   E          &mt RCA  F    &kp RCG     &kp LMEH  &kp LHYPER
+   &kp KP_PLUS       &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp KP_MINUS   &kp J                                            &mt RCTRL A          &mt RSHFT B          &mt RALT C    &kp RGUI    &kp RMEH  &kp RHYPER
+   &kp KP_ASTERISK   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp KP_SLASH   &kp LS(G)                                        &mt LCTRL SOUSCHEF   &kp LSHFT            &kp LALT      &kp LGUI    &none     &tog NUM
+                                                   &kp NUMBER_0   &kp COMMA      &kp DOT                                          &none                &kp        COPILOT   &kp      EQL      
                         >;
                 };
 
                 symbols_layer1 {
                         label = "SYM1";
-// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    ! |       { |       '   |     "    |       }    |      ?       |                            |     RAG    |     RSC   |      RCA  |     RCG   |     LMEH |     LHYPER  |
-// |    # |       ^ |       =   |     _    |       $    |      *       |                            |     RCTRL  |     RSHFT |      RALT |     RGUI  |     RMEH |     RHYPER  |
-// |    @ |       < |      "|"  |     -    |       >    |      /       |                            |     LCTRL  |     LSHFT |      LALT |     LGUI  |     RAG  |     RCA   |
-//                              |          |       .    |      *       |                            |            |           | CAPS WORD |
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   !    |     {    |     '    |     "     |     }    |      ?        |                                                      |      RAG    |     RSC   |      RCA  |     RCG   |     LMEH |     LHYPER  |
+// |   #    |     ^    |     =    |     _     |     $    |      *        |                                                      |      RCTRL  |     RSHFT |      RALT |     RGUI  |     RMEH |     RHYPER  |
+// |   @    |     <    |    "|"   |     -     |     >    |      /        |                                                      |      LCTRL  |     LSHFT |      LALT |     LGUI  |     RAG  |     RCA     |
+//                                |           |     .    |      *        |                                                      |             |           | CAPS WORD |
                        bindings = <
-   &kp EXCL  &kp LBRC  &kp SQT   &kp DQT     &kp RBRC    &kp QMARK                                   &kp  RAG    &kp   RSC     &kp   RCA   &kp RCG      &kp LMEH   &kp LHYPER
-   &kp HASH  &kp CARET &kp EQUAL &kp UNDER   &kp DOLLAR  &kp ASTERISK                                &kp  RCTRL  &kp   RSHFT   &kp   RALT  &kp RGUI    &kp RMEH   &kp RHYPER
-   &kp AT    &kp LT    &kp PIPE  &kp MINUS   &kp GT      &kp SLASH                                   &kp  LCTRL  &kp   LSHFT   &kp   LALT  &kp LGUI    &kp RAG    &kp RCA
-                                 &none       &kp DOT     &kp ASTERISK                                &tog SYM1   &none         &caps_word      
+   &kp EXCL   &kp LBRC   &kp SQT    &kp DQT     &kp RBRC    &kp QMARK                                                             &kp  RAG    &kp   RSC     &kp   RCA   &kp RCG     &kp LMEH   &kp LHYPER
+   &kp HASH   &kp CARET  &kp EQUAL  &kp UNDER   &kp DOLLAR  &kp ASTERISK                                                          &kp  RCTRL  &kp   RSHFT   &kp   RALT  &kp RGUI    &kp RMEH   &kp RHYPER
+   &kp AT     &kp LT     &kp PIPE   &kp MINUS   &kp GT      &kp SLASH                                                             &kp  LCTRL  &kp   LSHFT   &kp   LALT  &kp LGUI    &kp RAG    &kp RCA
+                                    &none       &kp DOT     &kp ASTERISK                                                          &tog SYM1   &none         &caps_word      
                         >;
                 };
                 symbols_layer2 {
                         label = "SYM2";
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    ! |       ` |       (   |     )   |       ;    |      ,       |                            |      RAG    |       RSC   |       RCA  |     RCG   |    LMEH |    LHYPER  |
-// |    # |       ^ |       =   |     _   |       $    |      *       |                            |      RCTRL  |       RSHFT |       RALT |     RGUI  |    RMEH |    RHYPER  |
-// |    ~ |       & |       [   |     ]   |       +    |      \       |                            |      LCTRL  |       LSHFT |       LALT |     LGUI  |    RAG  |    RCA   |
-//                              |     %   |       :    |      ;       |                            |             |             |            |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   !    |     `     |      (   |     )       |     ;      |     ,         |                                                 |      RAG    |       RSC   |       RCA  |     RCG   |    LMEH |    LHYPER  |
+// |   #    |     ^     |     =    |     _       |     $      |     *         |                                                 |      RCTRL  |       RSHFT |       RALT |     RGUI  |    RMEH |    RHYPER  |
+// |   ~    |     &     |     [    |     ]       |     +      |     \         |                                                 |      LCTRL  |       LSHFT |       LALT |     LGUI  |    RAG  |    RCA     |
+//                                 |     %       |     :      |     ;         |                                                 |             |             |            |
                        bindings = <
-   &kp EXCL  &kp GRAVE &kp LPAR  &kp RPAR    &kp SEMI    &kp COMMA                                   &kp  RAG      &kp   RSC     &kp   RCA    &kp RCG    &kp LMEH  &kp LHYPER
-   &kp HASH  &kp CARET &kp EQUAL &kp UNDER   &kp DOLLAR  &kp ASTERISK                                &kp  RCTRL    &kp   RSHFT   &kp   RALT   &kp RGUI   &kp RMEH  &kp RHYPER
-   &kp TILDE &kp AMPS  &kp LBKT  &kp RBKT    &kp PLUS    &kp BACKSLASH                               &kp  LCTRL    &kp   LSHFT   &kp   LALT   &kp LGUI   &kp RAG   &kp RCA
-                                 &kp PERCENT &kp COLON   &kp SEMI                                    &tog SYM2     &none         &none      
+   &kp EXCL   &kp GRAVE   &kp LPAR   &kp RPAR      &kp SEMI     &kp COMMA                                                         &kp  RAG      &kp   RSC     &kp   RCA    &kp RCG    &kp LMEH  &kp LHYPER
+   &kp HASH   &kp CARET   &kp EQUAL  &kp UNDER     &kp DOLLAR   &kp ASTERISK                                                      &kp  RCTRL    &kp   RSHFT   &kp   RALT   &kp RGUI   &kp RMEH  &kp RHYPER
+   &kp TILDE  &kp AMPS    &kp LBKT   &kp RBKT      &kp PLUS     &kp BACKSLASH                                                     &kp  LCTRL    &kp   LSHFT   &kp   LALT   &kp LGUI   &kp RAG   &kp RCA
+                                     &kp PERCENT   &kp COLON    &kp SEMI                                                          &tog SYM2     &none         &none      
                         >;
                 };
 
                 nav_layer {
                         label = "NAV";
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// | RHYPER   |    RMEH  |     LCG   |     LCA     | LSC   |     LAG   |                                      |     PASTE   |     COPY      |     CUT     |    UNDO    |      REDO   |            INS      |
-// | LHYPER   |    LMEH  |     LGUI  |     LALT    | LSHFT |     LCTRL |                                      |     LEFT    |     DOWN      |     UP      |    RIGHT   |             |                     |
-// |        |          |     RGUI  |     RALT    | RSHFT |     RCTRL |                                      |     HOME    |     PAGE_DOWN |     PAGE_UP |    END     |             |            K_APP    |       
-//                            |   DEL   |        | BSPC  |                                                  |     RET     |     BSPC      |     DEL     |
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |     RHYPER  |     RMEH   |     LCG   |     LCA  |       LSC   |     LAG   |                                                |     PASTE   |     COPY      |     CUT     |     UNDO   |       REDO   |            INS    |
+// |     LHYPER  |     LMEH   |     LGUI  |     LALT |       LSHFT |     LCTRL |                                                |     LEFT    |     DOWN      |     UP      |     RIGHT  |              |                   |
+// |             |            |     RGUI  |     RALT |       RSHFT |     RCTRL |                                                |     HOME    |     PAGE_DOWN |     PAGE_UP |     END    |              |            K_APP  |       
+//                                        |     DEL  |             |     BSPC  |                                                |     RET     |     DEL       |     BSPC    |
                         bindings = <
-   &kp RHYPER   &kp RMEH   &kp LCG    &kp LCA  &kp   LSC     &kp LAG                                            &kp K_PASTE   &kp K_COPY      &kp   K_CUT   &kp K_UNDO   &kp   K_REDO  &kp        INS
-   &kp LHYPER   &kp LMEH   &kp LGUI   &kp LALT &kp   LSHFT   &kp LCTRL                                          &kp LEFT      &kp DOWN        &kp      UP   &kp RIGHT    &none         &none
-   &none      &none      &kp RGUI   &kp RALT &kp   RSHFT   &kp RCTRL                                          &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none         &kp        K_APP
-                                    &kp DEL  &none         &kp BSPC                                           &kp RET       &kp DEL         &kp  BSPC      
+     &kp RHYPER    &kp RMEH     &kp LCG     &kp LCA    &kp   LSC     &kp LAG                                                      &kp K_PASTE   &kp K_COPY      &kp K_CUT     &kp K_UNDO   &kp   K_REDO   &kp        INS
+     &kp LHYPER    &kp LMEH     &kp LGUI    &kp LALT   &kp   LSHFT   &kp LCTRL                                                    &kp LEFT      &kp DOWN        &kp UP        &kp RIGHT    &none          &none
+     &none         &none        &kp RGUI    &kp RALT   &kp   RSHFT   &kp RCTRL                                                    &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END      &none          &kp        K_APP
+                                            &kp DEL    &none         &kp BSPC                                                     &kp RET       &kp DEL         &kp BSPC      
                         >;
                 };
 
                 volume_layer {
                         label = "VOLUME";
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   RHYPER  | RMEH      |     LCG   |     LCA  |       LSC   |     LAG   |                                  |              |       K_VOLUME_DOWN  |     K_VOlUME_UP  |                     |                 |                |
-// |   LHYPER  | LMEH      |     LGUI  |     LALT |       LSHFT |     LCTRL |                                  | C_BASS_BOOST |       C_VOLUME_DOWN  |     C_VOLUME_UP  |     C_ALT_AUDIO_INC |                 |                |
-// |   LMEH  |           |     RCTRL |     RALT |       RGUI  |     RSHFT |                                  |              |       K_VOLUME_DOWN2 |     K_VOlUME_UP2 |                     |                 |                |      
-//                       |                      |             |           |                                  | K_MUTE       |       C_MUTE         |     K_MUTE2      |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       RHYPER |      RMEH |     LCG   |       LCA  |       LSC   |     LAG   |                                              |                    |     K_VOLUME_DOWN  |     K_VOlUME_UP  |                       |              |                |
+// |       LHYPER |      LMEH |     LGUI  |       LALT |       LSHFT |     LCTRL |                                              |       C_BASS_BOOST |     C_VOLUME_DOWN  |     C_VOLUME_UP  |       C_ALT_AUDIO_INC |              |                |
+// |              |           |     RCTRL |       RALT |       RGUI  |     RSHFT |                                              |                    |     K_VOLUME_DOWN2 |     K_VOlUME_UP2 |                       |              |                |      
+//                                        |            |             |           |                                              |       K_MUTE       |     C_MUTE         |     K_MUTE2      |
                         bindings = <
-   &kp RHYPER    &kp  RMEH   &kp LCG   &kp   LCA    &kp   LSC   &kp   LAG                                        &none            &kp K_VOLUME_DOWN    &kp K_VOLUME_UP    &none                 &none                &none 
-   &kp LHYPER    &kp  LMEH   &kp LGUI  &kp   LALT   &kp   LSHFT &kp   LCTRL                                      &kp C_BASS_BOOST &kp C_VOLUME_DOWN    &kp C_VOLUME_UP    &kp C_ALT_AUDIO_INC   &none                &none
-   &none       &none       &kp RCTRL &kp   RALT   &kp   RGUI  &kp   RSHFT                                      &none            &kp K_VOLUME_DOWN2   &kp K_VOLUME_UP2   &none                 &none                &none
-                                     &none        &none       &none                                            &kp K_MUTE       &kp C_MUTE           &kp K_MUTE2
+     &kp   RHYPER   &kp  RMEH   &kp LCG     &kp   LCA    &kp   LSC   &kp   LAG                                                    &none                &kp K_VOLUME_DOWN    &kp K_VOLUME_UP    &none                   &none  &none 
+     &kp   LHYPER   &kp  LMEH   &kp LGUI    &kp   LALT   &kp   LSHFT &kp   LCTRL                                                  &kp   C_BASS_BOOST   &kp C_VOLUME_DOWN    &kp C_VOLUME_UP    &kp   C_ALT_AUDIO_INC   &none  &none
+     &none          &none       &kp RCTRL   &kp   RALT   &kp   RGUI  &kp   RSHFT                                                  &none                &kp K_VOLUME_DOWN2   &kp K_VOLUME_UP2   &none                   &none  &none
+                                            &none        &none       &none                                                        &kp   K_MUTE         &kp C_MUTE           &kp K_MUTE2
                         >;
                 };
 
                 fun_layer {
                         label = "FUN";
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |       |     F7 |   F8 |     F9  |         |       |                                          |      RAG    |     RSC   |     RCA  |      RCG  |       LMEH |       LHYPER  |
-// |       |     F4 |   F5 |     F6  |         |       |                                          |      RCTRL  |     RSHFT |     RALT |      RGUI |       RMEH |       RHYPER  |
-// |       |     F1 |   F2 |     F3  |         |       |                                          |      LCTRL  |     LSHFT |     LALT |      LGUI |            |             |
-//                         |     F10 |         |       |                                          | tog  FUN    |           |          |
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |     F7 |   F8 |     F9  |         |            |                                                                   |      RAG    |       RSC   |     RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |     F4 |   F5 |     F6  |         |            |                                                                   |      RCTRL  |       RSHFT |     RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |     F1 |   F2 |     F3  |         |            |                                                                   |      LCTRL  |       LSHFT |     LALT |      LGUI |            |               |
+//                         |     F10 |     DEL |       BSPC |                                                                   | tog  FUN    |             |          |
                          bindings = <
-   &none     &kp F7 &kp F8 &kp   F9  &none       &none                                              &kp  RAG     &kp RSC     &kp RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
-   &none     &kp F4 &kp F5 &kp   F6  &none       &none                                              &kp  RCTRL   &kp RSHFT   &kp RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
-   &none     &kp F1 &kp F2 &kp   F3  &none       &none                                              &kp  LCTRL   &kp LSHFT   &kp LALT    &kp LGUI   &none        &none
-                           &kp   F10 &kp   DEL   &kp   BSPC                                         &tog FUN    &none       &none     
+     &none   &kp F7 &kp F8 &kp   F9  &none       &none                                                                            &kp  RAG      &kp   RSC     &kp RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp F4 &kp F5 &kp   F6  &none       &none                                                                            &kp  RCTRL    &kp   RSHFT   &kp RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp F1 &kp F2 &kp   F3  &none       &none                                                                            &kp  LCTRL    &kp   LSHFT   &kp LALT    &kp LGUI   &none        &none
+                           &kp   F10 &kp   DEL   &kp   BSPC                                                                       &tog FUN      &none         &none     
                         >;
                 };
 
                 hfun_layer {
                         label = "HFUN";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |       |   F17 |     F18 |       F19 |       F23 |       F24 |                                  |     RAG   |    RSC   |       RCA  |       RCG   |      LMEH  |       LHYPER  |
-// |       |   F14 |     F15 |       F16 |       F21 |       F22 |                                  |     RCTRL |    RSHFT |       RALT |       RCTRL |      RMEH  |       RHYPER  |
-// |       |   F11 |     F12 |       F13 |           |           |                                  |     LCTRL |    LSHFT |       LALT |       LGUI  |            |       RMEH  |
-//                           |       F20 |           |           |                                  | tog HFUN  |          |            |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |     F17 |     F18 |       F19 |       F23  |       F24  |                                                          |      RAG    |       RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |     F14 |     F15 |       F16 |       F21  |       F22  |                                                          |      RCTRL  |       RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |     F11 |     F12 |       F13 |            |            |                                                          |      LCTRL  |       LSHFT |       LALT |      LGUI |            |               |
+//                             |       F20 |        DEL |       BSPC |                                                          |  tog HFUN   |             |            |
                          bindings = <
-   &none   &kp F17   &kp F18   &kp   F19   &kp   F23   &kp   F24                                     &kp  RCA    &kp RSC     &kp   RCA    &kp   RCG     &kp   LMEH   &kp   LHYPER
-   &none   &kp F14   &kp F15   &kp   F16   &kp   F21   &kp   F22                                     &kp  RCTRL  &kp RSHFT   &kp   RALT   &kp   RGUI    &kp   RMEH   &kp   RHYPER
-   &none   &kp F11   &kp F12   &kp   F13   &none       &none                                         &kp  LCTRL  &kp LSHFT   &kp   LALT   &kp   LGUI    &none        &none
-                           &kp   F20 &kp DEL   &kp BSPC                                              &tog HFUN   &none      &none     
+     &none   &kp F17   &kp F18   &kp   F19   &kp   F23    &kp   F24                                                               &kp  RAG      &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp F14   &kp F15   &kp   F16   &kp   F21    &kp   F22                                                               &kp  RCTRL    &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp F11   &kp F12   &kp   F13   &none        &none                                                                   &kp  LCTRL    &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                 &kp   F20   &kp   DEL    &kp   BSPC                                                              &tog HFUN     &none         &none     
                         >;
                 };
 
                 hypfun_layer {
                         label = "HPR FUN";
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    |          F7 |          F8 |           F9  |        |             |                   |            |             |      HYPHFUN |             |       |             |
-// |    |          F4 |          F5 |           F6  |        |             |                   | RSHFT      |        RGUI |      RALT    | RCTRL       |       |       RHYPER  |
-// |    |          F1 |          F2 |           F3  |        |             |                   | LCTRL      |        LSHFT |      LALT    | LGUI        |       |       RMEH  |
-//                                  |               |        |             |                   |            |             |              |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |        F7  |        F8  |        F9  |          |            |                                                     |       RAG    |      RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |        F4  |        F5  |        F6  |          |            |                                                     |       RCTRL  |      RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |        F1  |        F2  |        F3  |          |            |                                                     |       LCTRL  |      LSHFT |       LALT |      LGUI |            |               |
+//                                   |        F10 |          |            |                                                     |              |            |            |
                          bindings = <
-  &none  &kp LH(F7) &kp LH(F8)  &kp LH(F9)  &none      &none                         &none        &none        &mo   HYPHFUN   &none         &none   &none
-  &none  &kp LH(F4) &kp LH(F5)  &kp LH(F6)  &none      &none                         &kp   RSHFT  &kp    RGUI  &kp   RALT      &kp   RCTRL   &none   &kp   RHYPER
-  &none  &kp LH(F1) &kp LH(F2)  &kp LH(F3)  &none      &none                         &kp   LCTRL  &kp    LSHFT  &kp   LALT      &kp   LGUI    &none   &kp   RMEH
-                                        &kp LH(F10) &kp   DEL  &kp   BSPC                    &none        &none        &none     
+     &none   &kp LH(F7)   &kp LH(F8)   &kp LH(F9)   &none      &none                                                              &kp   RAG     &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LH(F4)   &kp LH(F5)   &kp LH(F6)   &none      &none                                                              &kp   RCTRL   &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LH(F1)   &kp LH(F2)   &kp LH(F3)   &none      &none                                                              &kp   LCTRL   &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                       &kp LH(F10)  &kp   DEL  &kp   BSPC                                                         &none         &none         &none     
                         >;
                 };
 
                 hyphfun_layer {
                         label = "HHPR FUN";
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    |          F17 |          F18 |           F19 |          F23 |          F24 |            |              |         |           |            |     |          |
-// |    |          F14 |          F15 |           F16 |          F21 |          F22 |            |      RSHFT   |    RGUI |      RALT | RCTRL      |     |     RHYPER |
-// |    |          F11 |          F12 |           F13 |              |              |            |      LCTRL   |    LSHFT |      LALT | LGUI       |     |     RMEH |
-//                                    |           F20 |              |              |            |              |         |           |
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |        F17  |        F18 |        F19 |          F23 |           F24 |                                             |       RAG    |    RSC   |     RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |        F14  |        F15 |        F16 |          F21 |           F22 |                                             |       RCTRL  |    RSHFT |     RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |        F11  |        F12 |        F13 |              |               |                                             |       LCTRL  |    LSHFT |     LALT |      LGUI |            |               |
+//                                    |        F20 |          DEL |        BSPC   |                                             |              |          |          |
                          bindings = <
-  &none  &kp LH(F17) &kp LH(F18)  &kp LH(F19) &kp LH(F23) &kp LH(F24)         &none        &none       &none        &none        &none &none
-  &none  &kp LH(F14) &kp LH(F15)  &kp LH(F16) &kp LH(F21) &kp LH(F22)         &kp   RSHFT  &kp   RGUI  &kp   RALT   &kp   RCTRL  &none &kp RHYPER
-  &none  &kp LH(F11) &kp LH(F12)  &kp LH(F13) &none &none                             &kp   LCTRL  &kp   LSHFT  &kp   LALT   &kp   LGUI   &none &kp RMEH
-                                          &kp LH(F20) &kp DEL &kp BSPC                        &none        &none       &none     
+     &none   &kp LH(F17)   &kp LH(F18)  &kp LH(F19)   &kp   LH(F23)  &kp   LH(F24)                                                &kp   RAG     &kp RSC     &kp RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LH(F14)   &kp LH(F15)  &kp LH(F16)   &kp   LH(F21)  &kp   LH(F22)                                                &kp   RCTRL   &kp RSHFT   &kp RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LH(F11)   &kp LH(F12)  &kp LH(F13)   &none          &none                                                        &kp   LCTRL   &kp LSHFT   &kp LALT    &kp LGUI   &none        &none
+                                        &kp LH(F20)   &kp   DEL      &kp   BSPC                                                   &none         &none       &none     
                         >;
                 };
 
                 mehfun_layer {
                         label = "LMEH FUN";
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    |         F7 |          F8 |          F9  |        |         |                         |             |       MEHHFUN |          |             |     |               |
-// |    |         F4 |          F5 |          F6  |        |         |                         |       RSHFT |       RGUI    |  RALT    |       RCTRL |     |         RHYPER  |
-// |    |         F1 |          F2 |          F3  |        |         |                         |       LCTRL |       LSHFT    |  LALT    |       LGUI  |     |         RMEH  |
-//                                 |          F10 |        |         |                         |             |               |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`
+// |      |         F7  |        F8  |        F9   |           |           |                                                     |      RAG    |      RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |      |         F4  |        F5  |        F6   |           |           |                                                     |      RCTRL  |      RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |      |         F1  |        F2  |        F3   |           |           |                                                     |      LCTRL  |      LSHFT |       LALT |      LGUI |            |               |
+//                                   |        F10  |       DEL |      BSPC |                                                     |             |           |            |
                          bindings = <
-  &none  &kp LM(F7)  &kp LM(F8)  &kp LM(F9)   &none    &none                            &none         &mo   MEHHFUN &none        &none         &none  &none
-  &none  &kp LM(F4)  &kp LM(F5)  &kp LM(F6)   &none    &none                            &kp   RSHFT   &kp   RGUI    &kp   RALT   &kp   RCTRL   &none  &kp    RHYPER
-  &none  &kp LM(F1)  &kp LM(F2)  &kp LM(F3)   &none    &none                            &kp   LCTRL   &kp   LSHFT    &kp   LALT   &kp   LGUI    &none  &kp    RMEH
-                                       &kp LM(F10)  &kp DEL  &kp BSPC                         &none         &none         &none     
+    &none    &kp LM(F7)   &kp LM(F8)   &kp LM(F9)    &none      &none                                                             &kp   RAG     &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+    &none    &kp LM(F4)   &kp LM(F5)   &kp LM(F6)    &none      &none                                                             &kp   RCTRL   &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+    &none    &kp LM(F1)   &kp LM(F2)   &kp LM(F3)    &none      &none                                                             &kp   LCTRL   &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                       &kp LM(F10)   &kp   DEL  &kp   BSPC                                                        &none         &none         &none     
                         >;
                 };
 
                 mehhfun_layer {
                         label = "HLMEH FUN";
-// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    |         F17 |          F18 |          F19 |           F23 |        F24  |               |           |            |            |                |       |             |
-// |    |         F14 |          F15 |          F16 |           F21 |        F22  |               | RSHIFT    |       RGUI |      RALT  |        RCTRL   |       |        RHYPER |
-// |    |         F11 |          F12 |          F13 |               |             |               | LSHIFT    |       LSHFT |      LALT  |        LGUI    |       |        RMEH |
-//                                   |          F20 |               |             |               |           |            |            |
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+// |       |        F17  |        F18  |        F19  |          F23  |          F24  |                                          |       RAG    |     RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |        F14  |        F15  |        F16  |          F21  |          F22  |                                          |       RCTRL  |     RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |        F11  |        F12  |        F13  |               |               |                                          |       LCTRL  |     LSHFT |       LALT |      LGUI |            |               |
+//                                     |        F20  |               |               |                                          |              |           |            |
                          bindings = <
-  &none  &kp LM(F17)  &kp LM(F18)  &kp LM(F19)  &kp LM(F23) &kp LM(F24)             &none        &none        &none         &none           &none   &none
-  &none  &kp LM(F14)  &kp LM(F15)  &kp LM(F16)  &kp LM(F21) &kp LM(F22)             &kp   RSHFT  &kp   RGUI   &kp   RALT    &kp   RCTRL     &none   &kp    RHYPER
-  &none  &kp LM(F11)  &kp LM(F12)  &kp LM(F13)  &none         &none                       &kp   LCTRL  &kp   LSHFT   &kp   LALT    &kp   LGUI      &none   &kp    RMEH
-                                         &kp LM(F20)  &kp DEL       &kp BSPC                    &none        &none        &none     
+     &none   &kp LM(F17)   &kp LM(F18)   &kp LM(F19)   &kp   LM(F23)   &kp   LM(F24)                                              &kp   RAG     &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LM(F14)   &kp LM(F15)   &kp LM(F16)   &kp   LM(F21)   &kp   LM(F22)                                              &kp   RCTRL   &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LM(F11)   &kp LM(F12)   &kp LM(F13)   &none           &none                                                      &kp   LCTRL   &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                         &kp LM(F20)   &kp   DEL       &kp   BSPC                                                 &none         &none         &none     
                         >;
                 };
 
                 mouse_layer {
                         label = "MOUSE";
-// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |      |     |          |       |         |            |                                             |       |       |           |           |           |          |
-// | LHYPER  |     |   LGUI  |  LALT |   LSHFT | LCTRL      |                                             |       |       |       MB1 |       MB3 |       MB4 |      MB5 |
-// | LMEH  |     |   RCTRL |  RALT |   RGUI  | RSIFT      |                                             |       |       |       MB2 |           |           |          |      
-//                         |       |         |            |                                             |       |       |           |
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |        |         |            |          |         |            |                                                          |       |       |           |           |           |          |
+// | LHYPER |         |      LGUI  |     LALT |   LSHFT | LCTRL      |                                                          |       |       |       MB1 |       MB3 |       MB4 |      MB5 |
+// | LMEH   |         |      RGUI  |     RALT |   RSHFT | RCTRL      |                                                          |       |       |       MB2 |           |           |          |      
+//                                 |          |         |            |                                                          |       |       |           |
                         bindings = <
-   &none   &none  &none     &none    &none     &none                                                      &none   &none   &none       &none      &none       &none   
-   &kp LHYPER &none &kp LGUI  &kp LALT &kp LSHFT &kp   LCTRL                                                &none   &none   &mkp  MB1   &mkp  MB3  &mkp   MB4  &mkp  MB5
-   &kp LMEH &none &kp RCTRL &kp RALT &kp RGUI  &kp   RSHFT                                                &none   &none   &mkp  MB2   &none      &none       &none
-                            &none    &none     &none                                                      &none   &none   &none      
+   &none        &none  &none         &none      &none        &none                                                                &none   &none   &none       &none      &none       &none   
+   &kp   LHYPER &none  &kp   LGUI    &kp LALT   &kp    LSHFT &kp   LCTRL                                                          &none   &none   &mkp  MB1   &mkp  MB3  &mkp   MB4  &mkp  MB5
+   &kp   LMEH   &none  &kp   RGUI    &kp RALT   &kp    RSHFT &kp   RCTRL                                                          &none   &none   &mkp  MB2   &none      &none       &none
+                            &none    &none       &none                                                                            &none   &none   &none      
                         >;
                 };
                 
                 config_layer {
                         label = "CONFIG";
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// | left reset     |       |        |               |               |                |                               |     BT_CLR      |     BT_PRV      |     BT_NXT    |     BT_CLR_AL   |               | right reset       |
-// | left bootloader|       |        |               |               |                |                               |     BT_SEL 0    |     BT_SEL 1    |     BT_SEL 2  |     BT_SEL 3    |     BT_SEL 4  | right bootloader  | 
-// | soft off       |       |        |               |               |       SOFT OFF |                               |     BT_DISC 0   |     BT_DISC 1   |     BT_DISC 2 |     BIT_DISC 3  |     BT_DISC 4 |            EP_TOG |
-//                                   |       OUT_USB |       OUT_BLE |       OUT_TOG  |                               |     EP_TOG      |     EP_ON       |     EP_OFF    |
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// | left reset     |       |        |               |               |                |                                         |      BT_CLR      |     BT_PRV      |     BT_NXT    |     BT_CLR_AL   |               | right reset       |
+// | left bootloader|       |        |               |               |                |                                         |      BT_SEL 0    |     BT_SEL 1    |     BT_SEL 2  |     BT_SEL 3    |     BT_SEL 4  | right bootloader  | 
+// | soft off       |       |        |               |               |       SOFT OFF |                                         |      BT_DISC 0   |     BT_DISC 1   |     BT_DISC 2 |     BIT_DISC 3  |     BT_DISC 4 |            EP_TOG |
+//                                   |       OUT_USB |       OUT_BLE |       OUT_TOG  |                                         |      EP_TOG      |     EP_ON       |     EP_OFF    |
                          bindings = <
-   &sys_reset  &none         &none     &none           &to   QWERTY    &to   NGRAM                                      &bt  BT_CLR       &bt BT_PRV        &bt BT_NXT      &bt BT_CLR_ALL    &none           &sys_reset 
-   &bootloader &none         &none     &none           &none           &none                                            &bt  BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4    &bootloader
-   &soft_off   &none         &none     &none           &none           &soft_off                                        &bt  BT_DISC 0    &bt BT_DISC 1     &bt BT_DISC 2   &bt BT_DISC 3     &bt BT_DISC 4   &ext_power EP_TOG
-                                       &out  OUT_USB   &out  OUT_BLE   &out  OUT_TOG                                    &tog CONFIG       &ext_power EP_ON  &ext_power EP_OFF      
+   &sys_reset  &none         &none     &none           &to   QWERTY    &to   NGRAM                                                &bt  BT_CLR        &bt BT_PRV        &bt BT_NXT      &bt BT_CLR_ALL    &none           &sys_reset 
+   &bootloader &none         &none     &none           &none           &none                                                      &bt  BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4    &bootloader
+   &soft_off   &none         &none     &none           &none           &soft_off                                                  &bt  BT_DISC 0     &bt BT_DISC 1     &bt BT_DISC 2   &bt BT_DISC 3     &bt BT_DISC 4   &ext_power EP_TOG
+                                       &out  OUT_USB   &out  OUT_BLE   &out  OUT_TOG                                              &tog CONFIG        &ext_power EP_ON  &ext_power EP_OFF      
                         >;
                 };
 
                 power_layer {
                         label = "POWER";
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |     |      |      |     |      |         |                                     |     C_RESET      |     K_POWER   |    C_POWER     |      |      |       |
-// |     |      |      |     |      |         |                                     |     C_SLEEP_MODE |     K_SLEEP   |    C_SLEEP     |      |      |       | 
-// |     |      |      |     |      |         |                                     |                  |               |                |      |      |       |
-//                     |     |      |         |                                     |     K_LOCK       |     C_AL_LOCK |    C_AL_LOGOFF |
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |       |       |      |       |         |                                                                           |     C_RESET      |     K_POWER   |    C_POWER     |      |      |       |
+// |       |       |       |      |       |         |                                                                           |     C_SLEEP_MODE |     K_SLEEP   |    C_SLEEP     |      |      |       | 
+// |       |       |       |      |       |         |                                                                           |                  |               |                |      |      |       |
+//                         |      |       |         |                                                                           |     K_LOCK       |     C_AL_LOCK |    C_AL_LOGOFF |
                          bindings = <
-   &none  &none  &none  &none  &none  &none                                           &kp C_RESET        &kp K_POWER    &kp K_POWER       &none  &none  &none 
-   &none  &none  &none  &none  &none  &none                                           &kp C_SLEEP_MODE   &kp K_SLEEP    &kp C_SLEEP       &none  &none  &none
-   &none  &none  &none  &none  &none  &none                                           &none              &none          &none             &none  &none  &none
-                        &none  &none  &none                                           &kp K_LOCK         &kp C_AL_LOCK  &kp C_AL_LOGOFF  
+     &none   &none   &none  &none   &none   &none                                                                                 &kp C_RESET        &kp K_POWER    &kp K_POWER       &none  &none  &none 
+     &none   &none   &none  &none   &none   &none                                                                                 &kp C_SLEEP_MODE   &kp K_SLEEP    &kp C_SLEEP       &none  &none  &none
+     &none   &none   &none  &none   &none   &none                                                                                 &none              &none          &none             &none  &none  &none
+                            &none   &none   &none                                                                                 &kp K_LOCK         &kp C_AL_LOCK  &kp C_AL_LOGOFF  
                         >;
                 };
 
