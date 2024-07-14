@@ -1,4 +1,4 @@
-/*
+/*H
 *
 * Copyright (c) 2024  Hans Kruse
 * Based on a configuration (c) 2023 Darryl deHaan
@@ -135,11 +135,40 @@
             		key-positions = <0 30>;
             		bindings = <&tog FUN>;
         	};
+
 		combo_high_function_keys {
             		layers = <NGRAM QWERTY HFUN>;
             		timeout-ms = <25>;
-            		key-positions = <0 6>;
+            		key-positions = <0 18>;
             		bindings = <&tog HFUN>;
+        	};
+
+		combo_hyper_function_keys {
+            		layers = <NGRAM QWERTY  HYPFUN>;
+            		timeout-ms = <25>;
+            		key-positions = <0 31>;
+            		bindings = <&tog HYPFUN>;
+        	};
+
+		combo_hyper_high_function_keys {
+            		layers = <NGRAM QWERTY HYPHFUN>;
+            		timeout-ms = <25>;
+            		key-positions = <0 19>;
+            		bindings = <&tog HYPHFUN>;
+        	};
+
+		combo_hyper_function_keys {
+            		layers = <NGRAM QWERTY  MEHFUN>;
+            		timeout-ms = <25>;
+            		key-positions = <0 32>;
+            		bindings = <&tog MEHFUN>;
+        	};
+
+		combo_hyper_high_function_keys {
+            		layers = <NGRAM QWERTY MEHHFUN>;
+            		timeout-ms = <25>;
+            		key-positions = <0 20>;
+            		bindings = <&tog MEHHFUN>;
         	};
 
     	};
@@ -284,61 +313,61 @@
 
                 hypfun_layer {
                         label = "HPR FUN";
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |       |        F7  |        F8  |        F9  |          |            |                                                     |       RAG    |      RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
-// |       |        F4  |        F5  |        F6  |          |            |                                                     |       RCTRL  |      RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
-// |       |        F1  |        F2  |        F3  |          |            |                                                     |       LCTRL  |      LSHFT |       LALT |      LGUI |            |               |
-//                                   |        F10 |          |            |                                                     |              |            |            |
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |        F7  |        F8  |        F9  |          |            |                                                     |       RAG    |       RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |        F4  |        F5  |        F6  |          |            |                                                     |       RCTRL  |       RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |        F1  |        F2  |        F3  |          |            |                                                     |       LCTRL  |       LSHFT |       LALT |      LGUI |            |               |
+//                                   |        F10 |          |            |                                                     |              |             |            |
                          bindings = <
-     &none   &kp LH(F7)   &kp LH(F8)   &kp LH(F9)   &none      &none                                                              &kp   RAG     &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
-     &none   &kp LH(F4)   &kp LH(F5)   &kp LH(F6)   &none      &none                                                              &kp   RCTRL   &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
-     &none   &kp LH(F1)   &kp LH(F2)   &kp LH(F3)   &none      &none                                                              &kp   LCTRL   &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
-                                       &kp LH(F10)  &kp   DEL  &kp   BSPC                                                         &none         &none         &none     
+     &none   &kp LH(F7)   &kp LH(F8)   &kp LH(F9)   &none      &none                                                              &kp   RAG      &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LH(F4)   &kp LH(F5)   &kp LH(F6)   &none      &none                                                              &kp   RCTRL    &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LH(F1)   &kp LH(F2)   &kp LH(F3)   &none      &none                                                              &kp   LCTRL    &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                       &kp LH(F10)  &kp   DEL  &kp   BSPC                                                         &tog  HYPFUN   &none         &none     
                         >;
                 };
 
                 hyphfun_layer {
                         label = "HHPR FUN";
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |       |        F17  |        F18 |        F19 |          F23 |           F24 |                                             |       RAG    |    RSC   |     RCA  |      RCG  |       LMEH |       LHYPER  |
-// |       |        F14  |        F15 |        F16 |          F21 |           F22 |                                             |       RCTRL  |    RSHFT |     RALT |      RGUI |       RMEH |       RHYPER  |
-// |       |        F11  |        F12 |        F13 |              |               |                                             |       LCTRL  |    LSHFT |     LALT |      LGUI |            |               |
-//                                    |        F20 |          DEL |        BSPC   |                                             |              |          |          |
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |       |        F17  |        F18 |        F19 |          F23 |           F24 |                                             |       RAG     |      RSC   |     RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |        F14  |        F15 |        F16 |          F21 |           F22 |                                             |       RCTRL   |      RSHFT |     RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |        F11  |        F12 |        F13 |              |               |                                             |       LCTRL   |      LSHFT |     LALT |      LGUI |            |               |
+//                                    |        F20 |          DEL |        BSPC   |                                             | tog   HYPHFUN |            |          |
                          bindings = <
-     &none   &kp LH(F17)   &kp LH(F18)  &kp LH(F19)   &kp   LH(F23)  &kp   LH(F24)                                                &kp   RAG     &kp RSC     &kp RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
-     &none   &kp LH(F14)   &kp LH(F15)  &kp LH(F16)   &kp   LH(F21)  &kp   LH(F22)                                                &kp   RCTRL   &kp RSHFT   &kp RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
-     &none   &kp LH(F11)   &kp LH(F12)  &kp LH(F13)   &none          &none                                                        &kp   LCTRL   &kp LSHFT   &kp LALT    &kp LGUI   &none        &none
-                                        &kp LH(F20)   &kp   DEL      &kp   BSPC                                                   &none         &none       &none     
+     &none   &kp LH(F17)   &kp LH(F18)  &kp LH(F19)   &kp   LH(F23)  &kp   LH(F24)                                                &kp  RAG        &kp   RSC     &kp RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LH(F14)   &kp LH(F15)  &kp LH(F16)   &kp   LH(F21)  &kp   LH(F22)                                                &kp  RCTRL      &kp   RSHFT   &kp RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LH(F11)   &kp LH(F12)  &kp LH(F13)   &none          &none                                                        &kp  LCTRL      &kp   LSHFT   &kp LALT    &kp LGUI   &none        &none
+                                        &kp LH(F20)   &kp   DEL      &kp   BSPC                                                   &tog HYPHFUN    &none         &none     
                         >;
                 };
 
                 mehfun_layer {
                         label = "LMEH FUN";
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`
-// |      |         F7  |        F8  |        F9   |           |           |                                                     |      RAG    |      RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
-// |      |         F4  |        F5  |        F6   |           |           |                                                     |      RCTRL  |      RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
-// |      |         F1  |        F2  |        F3   |           |           |                                                     |      LCTRL  |      LSHFT |       LALT |      LGUI |            |               |
-//                                   |        F10  |       DEL |      BSPC |                                                     |             |           |            |
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |      |         F7  |        F8  |        F9   |           |           |                                                     |      RAG    |       RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |      |         F4  |        F5  |        F6   |           |           |                                                     |      RCTRL  |       RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |      |         F1  |        F2  |        F3   |           |           |                                                     |      LCTRL  |       LSHFT |       LALT |      LGUI |            |               |
+//                                   |        F10  |       DEL |      BSPC |                                                     |  tog MEHFUN |             |            |
                          bindings = <
-    &none    &kp LM(F7)   &kp LM(F8)   &kp LM(F9)    &none      &none                                                             &kp   RAG     &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
-    &none    &kp LM(F4)   &kp LM(F5)   &kp LM(F6)    &none      &none                                                             &kp   RCTRL   &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
-    &none    &kp LM(F1)   &kp LM(F2)   &kp LM(F3)    &none      &none                                                             &kp   LCTRL   &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
-                                       &kp LM(F10)   &kp   DEL  &kp   BSPC                                                        &none         &none         &none     
+    &none    &kp LM(F7)   &kp LM(F8)   &kp LM(F9)    &none      &none                                                             &kp  RAG       &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+    &none    &kp LM(F4)   &kp LM(F5)   &kp LM(F6)    &none      &none                                                             &kp  RCTRL     &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+    &none    &kp LM(F1)   &kp LM(F2)   &kp LM(F3)    &none      &none                                                             &kp  LCTRL     &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                       &kp LM(F10)   &kp   DEL  &kp   BSPC                                                        &tog MEHFUN    &none         &none     
                         >;
                 };
 
                 mehhfun_layer {
                         label = "HLMEH FUN";
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-// |       |        F17  |        F18  |        F19  |          F23  |          F24  |                                          |       RAG    |     RSC   |       RCA  |      RCG  |       LMEH |       LHYPER  |
-// |       |        F14  |        F15  |        F16  |          F21  |          F22  |                                          |       RCTRL  |     RSHFT |       RALT |      RGUI |       RMEH |       RHYPER  |
-// |       |        F11  |        F12  |        F13  |               |               |                                          |       LCTRL  |     LSHFT |       LALT |      LGUI |            |               |
-//                                     |        F20  |               |               |                                          |              |           |            |
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+// |       |        F17  |        F18  |        F19  |          F23  |          F24  |                                          |       RAG     |       RSC    |       RCA  |      RCG  |       LMEH |       LHYPER  |
+// |       |        F14  |        F15  |        F16  |          F21  |          F22  |                                          |       RCTRL   |       RSHFT  |       RALT |      RGUI |       RMEH |       RHYPER  |
+// |       |        F11  |        F12  |        F13  |               |               |                                          |       LCTRL   |       LSHFT  |       LALT |      LGUI |            |               |
+//                                     |        F20  |               |               |                                          |   tog MEHHFUN |              |            |
                          bindings = <
-     &none   &kp LM(F17)   &kp LM(F18)   &kp LM(F19)   &kp   LM(F23)   &kp   LM(F24)                                              &kp   RAG     &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
-     &none   &kp LM(F14)   &kp LM(F15)   &kp LM(F16)   &kp   LM(F21)   &kp   LM(F22)                                              &kp   RCTRL   &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
-     &none   &kp LM(F11)   &kp LM(F12)   &kp LM(F13)   &none           &none                                                      &kp   LCTRL   &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
-                                         &kp LM(F20)   &kp   DEL       &kp   BSPC                                                 &none         &none         &none     
+     &none   &kp LM(F17)   &kp LM(F18)   &kp LM(F19)   &kp   LM(F23)   &kp   LM(F24)                                              &kp  RAG        &kp   RSC     &kp   RCA     &kp RCG    &kp   LMEH   &kp   LHYPER
+     &none   &kp LM(F14)   &kp LM(F15)   &kp LM(F16)   &kp   LM(F21)   &kp   LM(F22)                                              &kp  RCTRL      &kp   RSHFT   &kp   RALT    &kp RGUI   &kp   RMEH   &kp   RHYPER
+     &none   &kp LM(F11)   &kp LM(F12)   &kp LM(F13)   &none           &none                                                      &kp  LCTRL      &kp   LSHFT   &kp   LALT    &kp LGUI   &none        &none
+                                         &kp LM(F20)   &kp   DEL       &kp   BSPC                                                 &tog MEHHFUN    &none         &none     
                         >;
                 };
 
