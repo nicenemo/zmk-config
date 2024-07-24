@@ -1,4 +1,4 @@
-/*H
+/*
 *
 * Copyright (c) 2024  Hans Kruse
 * Based on a configuration (c) 2023 Darryl deHaan
@@ -190,7 +190,7 @@
 			tapping-term-ms = <HM_TAPPING_TERM_FAST>;
 			quick-tap-ms = <HM_QUICK_TAP>;
 			require-prior-idle-ms = <HM_PRIOR_IDLE>;
-			hold-trigger-key-positions = <KEYS_R THUMBS_R>;
+			hold-trigger-key-positions = <0>;
 	  	};
 		hr: homerow_mods_right {
 			compatible = "zmk,behavior-hold-tap";
@@ -200,7 +200,7 @@
 			tapping-term-ms = <HM_TAPPING_TERM_FAST>;
 			quick-tap-ms = <HM_QUICK_TAP>;
 			require-prior-idle-ms = <HM_PRIOR_IDLE>;
-			hold-trigger-key-positions = <KEYS_L THUMBS_L>;
+			hold-trigger-key-positions = <0>;
 	  	};
 
 	};
