@@ -217,7 +217,7 @@
 //                                               |           ESC |            TAB |               SPACE |                       |             RET  |            DEL |            BSPC |
                         bindings = <
    &mt RHYPER DQT    &mt RMEH B   &mt LCG     Y    &mt LCA    O    &mt LSC    U     &mt LAG       SQT                             &mt RAG     SEMI   &mt RSC    L     &mt RCA    D      &mt RCG      W    &mt LMEH   V    &mt LHYPER Z 
-   &mt LHYPER HASH   &mt LMEH C   &mt LGUI    I    &mt LALT   E    &mt LSHFT  A     &mt LCTRL     COMMA                           &mt RCTRL   DOT    &mt RSHFT  H     &mt RALT   T      &mt RGUI     S    &mt RMEH   N    &mt RHYPER Q
+   &mt LHYPER HASH   &mt LMEH C   &mt LGUI    I    &mt LALT   E    &hl LSHFT  A     &mt LCTRL     COMMA                           &mt RCTRL   DOT    &hr RSHFT  H     &mt RALT   T      &mt RGUI     S    &mt RMEH   N    &mt RHYPER Q
    &kp        GRAVE  &kp      G   &mt RGUI    X    &mt RALT   J    &mt RSHFT  K     &mt RCTRL     MINUS                           &mt LCTRL   FSLH   &mt LSHFT  R     &mt LALT   M      &mt LGUI     F    &kp        P    &lt MOUSE  BACKSLASH 
                                                    &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                           &lt NUM     RET    &lt SYM1   DEL   &lt SYM2   BSPC 
                         >;
