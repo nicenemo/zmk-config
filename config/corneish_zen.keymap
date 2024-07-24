@@ -216,9 +216,9 @@
 // |          GRAVE |         G  |            X  |           J   |            K   |               MINUS |                       |             FSLH |            R   |            M    |              F  |            P  |            BACKSLASH |       
 //                                               |           ESC |            TAB |               SPACE |                       |             RET  |            DEL |            BSPC |
                         bindings = <
-   &hl RHYPER DQT    &hl RMEH B   &mt LCG     Y    &mt LCA    O    &mt LSC    U     &mt LAG       SQT                             &mt RAG     SEMI   &mt RSC    L     &mt RCA    D      &mt RCG      W    &mt LMEH   V    &hr LHYPER Z 
-   &hl LHYPER HASH   &hl LMEH C   &mt LGUI    I    &mt LALT   E    &hl LSHFT  A     &mt LCTRL     COMMA                           &mt RCTRL   DOT    &hr RSHFT  H     &mt RALT   T      &mt RGUI     S    &mt RMEH   N    &hr RHYPER Q
-   &kp        GRAVE  &kp      G   &mt RGUI    X    &mt RALT   J    &mt RSHFT  K     &mt RCTRL     MINUS                           &mt LCTRL   FSLH   &mt LSHFT  R     &mt LALT   M      &mt LGUI     F    &kp        P    &lt MOUSE  BACKSLASH 
+   &hl RHYPER DQT    &hl RMEH B   &hl LCG     Y    &hl LCA    O    &hl LSC    U     &hl LAG       SQT                             &hr RAG     SEMI   &hr RSC    L     &hr RCA    D      &hr RCG      W    &hr LMEH   V    &hr LHYPER Z 
+   &hl LHYPER HASH   &hl LMEH C   &hl LGUI    I    &hl LALT   E    &hl LSHFT  A     &hl LCTRL     COMMA                           &hr RCTRL   DOT    &hr RSHFT  H     &hr RALT   T      &hr RGUI     S    &hr RMEH   N    &hr RHYPER Q
+   &kp        GRAVE  &hl LCA  G   &hl RGUI    X    &hl RALT   J    &hl RSHFT  K     &hl RCTRL     MINUS                           &hr LCTRL   FSLH   &hr LSHFT  R     &hr LALT   M      &hr LGUI     F    &hr RCA    P    &lt MOUSE  BACKSLASH 
                                                    &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                           &lt NUM     RET    &lt SYM1   DEL   &lt SYM2   BSPC 
                         >;
                 };
@@ -231,10 +231,10 @@
 // |          GRAVE |         Z  |            X  |           C   |            V   |               B     |                       |             N   |            M   |            ,    |              .  |            /  |            '        |       
 //                                               |           ESC |            TAB |               SPACE |                       |             RET |            DEL |            BSPC |
                         bindings = <
-   &mt RHYPER DQT    &kp      Q   &mt LCG     W    &mt LCA    E    &mt LSC    R     &mt LAG       T                               &mt RAG     Y     &mt RSC    U     &mt RCA    I      &mt RCG      O    &mt LMEH   P    &mt LHYPER BACKSLASH
-   &mt LHYPER HASH   &mt LMEH A   &mt LGUI    S    &mt LALT   D    &mt LSHFT  F     &mt LCTRL     G                               &mt RCTRL   H     &mt RSHFT  J     &mt RALT   K      &mt RGUI     L    &mt RMEH   SEMI &mt RHYPER DQT
-   &mt LCA    GRAVE  &kp      Z   &mt RGUI    X    &mt RALT   C    &mt RSHFT  V     &mt RCTRL     B                               &mt LCTRL   N     &mt LSHFT  M     &mt LALT   COMMA  &mt LGUI     DOT  &mt RAG    FSLH &lt MOUSE  SQT 
-                                                 &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                             &lt NUM     RET   &lt SYM1   DEL   &lt SYM2   BSPC 
+   &hl RHYPER DQT    &hl RMEH Q   &hl LCG     W    &hl LCA    E    &hl LSC    R     &hl LAG       T                               &hr RAG     Y     &hr RSC    U     &hr RCA    I      &hr RCG      O    &hr LMEH   P    &hr LHYPER BACKSLASH
+   &hl LHYPER HASH   &hl LMEH A   &hl LGUI    S    &hl LALT   D    &hl LSHFT  F     &hl LCTRL     G                               &hr RCTRL   H     &hr RSHFT  J     &hr RALT   K      &hr RGUI     L    &hr RMEH   SEMI &hr RHYPER DQT
+   &kp        GRAVE  &hl LCA  Z   &hl RGUI    X    &hl RALT   C    &hl RSHFT  V     &hl RCTRL     B                               &hr LCTRL   N     &hr LSHFT  M     &hr LALT   COMMA  &hr LGUI     DOT  &hr RCA    FSLH &lt MOUSE  SQT 
+                                                   &lt VOLUME ESC  &lt NAV    TAB   &lt APPLAUNCH SPACE                           &lt NUM     RET   &lt SYM1   DEL   &lt SYM2   BSPC 
                         >;
                 };
 
