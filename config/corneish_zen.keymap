@@ -70,8 +70,8 @@
  
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29
 #define KEYS_R 5 6 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35
-#define THUMB_L 36 37 38
-#define THUMB_R 39 40 41
+#define THUMBS_L 36 37 38
+#define THUMBS_R 39 40 41
 
 #define HM_TAPPING_TERM 200
 #define HM_TAPPING_TERM_FAST 175
@@ -190,7 +190,7 @@
 			tapping-term-ms = <HM_TAPPING_TERM_FAST>;
 			quick-tap-ms = <HM_QUICK_TAP>;
 			require-prior-idle-ms = <HM_PRIOR_IDLE>;
-			hold-trigger-key-positions = <0>;
+			hold-trigger-key-positions = <KEYS_R THUMBS_R>;
 	  	};
 		hr: homerow_mods_right {
 			compatible = "zmk,behavior-hold-tap";
@@ -200,7 +200,7 @@
 			tapping-term-ms = <HM_TAPPING_TERM_FAST>;
 			quick-tap-ms = <HM_QUICK_TAP>;
 			require-prior-idle-ms = <HM_PRIOR_IDLE>;
-			hold-trigger-key-positions = <0>;
+			hold-trigger-key-positions = <KEYS_L THUMBS_L>;
 	  	};
 
 	};
